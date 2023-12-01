@@ -1,0 +1,15 @@
+.warningMsg {
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.speechAvailable {
+    color: green;
+    font-weight: lighter;
+}
+
+.speechFrame {
+    border: 1px solid black;
+    padding: 5px;
+}
