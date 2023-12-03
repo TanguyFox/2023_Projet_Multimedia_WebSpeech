@@ -1,0 +1,904 @@
+{
+    "dict" : [
+        {
+            "id": 1,
+            "path": "resources/carte/Alarm_clock.png",
+            "language": {
+                "English" : "Alarm clock",
+                "French":"Réveil",
+                "Chinese": "闹钟"
+            }
+        },
+        {
+            "id": 2,
+            "path": "resources/carte/Anteater.png",
+            "language": {
+                "English" : "Anteater",
+                "French":"Fourmilier",
+                "Chinese": "食蚁兽"
+            }
+        },
+        {
+            "id": 3,
+            "path": "resources/carte/Apple.png",
+            "language": {
+                "English" : "Apple",
+                "French":"Pomme",
+                "Chinese": "苹果"
+            }
+        },
+        {
+            "id": 4,
+            "path": "resources/carte/Apricot.png",
+            "language": {
+                "English" : "Apricot",
+                "French":"Abricot",
+                "Chinese": "杏子"
+            }
+        },
+        {
+            "id": 5,
+            "path": "resources/carte/Avocado.png",
+            "language": {
+                "English" : "Avocado",
+                "French":"Avocat",
+                "Chinese": "牛油果"
+            }
+        },
+        {
+            "id": 6,
+            "path": "resources/carte/Banana.png",
+            "language": {
+                "English" : "Banana",
+                "French":"Banane",
+                "Chinese": "香蕉"
+            }
+        },
+        {
+            "id": 7,
+            "path": "resources/carte/Bear.png",
+            "language": {
+                "English" : "Bear",
+                "French":"Ours",
+                "Chinese": "熊"
+            }
+        },
+        {
+            "id": 8,
+            "path": "resources/carte/Belt.png",
+            "language": {
+                "English" : "Belt",
+                "French":"Ceinture",
+                "Chinese": "腰带"
+            }
+        },
+        {
+            "id": 9,
+            "path": "resources/carte/Bucket.png",
+            "language": {
+                "English" : "Bucket",
+                "French":"Seau",
+                "Chinese": "桶"
+            }
+        },
+        {
+            "id": 10,
+            "path": "resources/carte/Candle.png",
+            "language": {
+                "English" : "Candle",
+                "French":"Bougie",
+                "Chinese": "蜡烛"
+            }
+        },
+        {
+            "id": 11,
+            "path": "resources/carte/Carrot.png",
+            "language": {
+                "English" : "Carrot",
+                "French":"Carotte",
+                "Chinese": "胡萝卜"
+            }
+        },
+        {
+            "id": 12,
+            "path": "resources/carte/Cat.png",
+            "language": {
+                "English" : "Cat",
+                "French":"Chat",
+                "Chinese": "猫"
+            }
+        },
+        {
+            "id": 13,
+            "path": "resources/carte/Chameleon.png",
+            "language": {
+                "English" : "Chameleon",
+                "French":"Caméléon",
+                "Chinese": "变色龙"
+            }
+        },
+        {
+            "id": 14,
+            "path": "resources/carte/Cherry.png",
+            "language": {
+                "English" : "Cherry",
+                "French":"Cerise",
+                "Chinese": "樱桃"
+            }
+        },
+        {
+            "id": 15,
+            "path": "resources/carte/Chicken.png",
+            "language": {
+                "English" : "Chicken",
+                "French":"Poulet",
+                "Chinese": "鸡"
+            }
+        },
+        {
+            "id": 16,
+            "path": "resources/carte/Clementine.png",
+            "language": {
+                "English" : "Clementine",
+                "French":"Clémentine",
+                "Chinese": "柑橘"
+            }
+        },
+        {
+            "id": 17,
+            "path": "resources/carte/Coconut.png",
+            "language": {
+                "English" : "Coconut",
+                "French":"Noix de coco",
+                "Chinese": "椰子"
+            }
+        },
+        {
+            "id": 18,
+            "path": "resources/carte/Corn.png",
+            "language": {
+                "English" : "Corn",
+                "French":"Maïs",
+                "Chinese": "玉米"
+            }
+        },
+        {
+            "id": 19,
+            "path": "resources/carte/Cow.png",
+            "language": {
+                "English" : "Cow",
+                "French":"Vache",
+                "Chinese": "奶牛"
+            }
+        },
+        {
+            "id": 20,
+            "path": "resources/carte/Crab.png",
+            "language": {
+                "English" : "Crab",
+                "French":"Crabe",
+                "Chinese": "螃蟹"
+            }
+        },
+        {
+            "id": 21,
+            "path": "resources/carte/Crocodile.png",
+            "language": {
+                "English" : "Crocodile",
+                "French":"Crocodile",
+                "Chinese": "鳄鱼"
+            }
+        },
+        {
+            "id": 22,
+            "path": "resources/carte/Cup.png",
+            "language": {
+                "English" : "Cup",
+                "French":"Tasse",
+                "Chinese": "杯子"
+            }
+        },
+        {
+            "id": 23,
+            "path": "resources/carte/Deer.png",
+            "language": {
+                "English" : "Deer",
+                "French":"Cerf",
+                "Chinese": "鹿"
+            }
+        },
+        {
+            "id": 24,
+            "path": "resources/carte/Dice.png",
+            "language": {
+                "English" : "Dice",
+                "French":"Dé",
+                "Chinese": "骰子"
+            }
+        },
+        {
+            "id": 25,
+            "path": "resources/carte/Dog.png",
+            "language": {
+                "English" : "Dog",
+                "French":"Chien",
+                "Chinese": "狗"
+            }
+        },
+        {
+            "id": 26,
+            "path": "resources/carte/Dolphin.png",
+            "language": {
+                "English" : "Dolphin",
+                "French":"Dauphin",
+                "Chinese": "海豚"
+            }
+        },
+        {
+            "id": 27,
+            "path": "resources/carte/Donkey.png",
+            "language": {
+                "English" : "Donkey",
+                "French":"Âne",
+                "Chinese": "驴子"
+            }
+        },
+        {
+            "id": 28,
+            "path": "resources/carte/Duck.png",
+            "language": {
+                "English" : "Duck",
+                "French":"Canard",
+                "Chinese": "鸭子"
+            }
+        },
+        {
+            "id": 29,
+            "path": "resources/carte/Eagle.png",
+            "language": {
+                "English" : "Eagle",
+                "French":"Aigle",
+                "Chinese": "鹰"
+            }
+        },
+        {
+            "id": 30,
+            "path": "resources/carte/Eggplant.png",
+            "language": {
+                "English" : "Eggplant",
+                "French":"Aubergine",
+                "Chinese": "茄子"
+            }
+        },
+        {
+            "id": 31,
+            "path": "resources/carte/Elephant.png",
+            "language": {
+                "English" : "Elephant",
+                "French":"Éléphant",
+                "Chinese": "大象"
+            }
+        },
+        {
+            "id": 32,
+            "path": "resources/carte/Fig.png",
+            "language": {
+                "English" : "Fig",
+                "French":"Figue",
+                "Chinese": "无花果"
+            }
+        },
+        {
+            "id": 33,
+            "path": "resources/carte/Fish.png",
+            "language": {
+                "English" : "Fish",
+                "French":"Poisson",
+                "Chinese": "鱼"
+            }
+        },
+        {
+            "id": 34,
+            "path": "resources/carte/Fork.png",
+            "language": {
+                "English" : "Fork",
+                "French":"Fourchette",
+                "Chinese": "叉子"
+            }
+        },
+        {
+            "id": 35,
+            "path": "resources/carte/Fox.png",
+            "language": {
+                "English" : "Fox",
+                "French":"Renard",
+                "Chinese": "狐狸"
+            }
+        },
+        {
+            "id": 36,
+            "path": "resources/carte/Frog.png",
+            "language": {
+                "English" : "Frog",
+                "French":"Grenouille",
+                "Chinese": "青蛙"
+            }
+        },
+        {
+            "id": 37,
+            "path": "resources/carte/Garlic.png",
+            "language": {
+                "English" : "Garlic",
+                "French":"Ail",
+                "Chinese": "蒜"
+            }
+        },
+        {
+            "id": 38,
+            "path": "resources/carte/Ginger.png",
+            "language": {
+                "English" : "Ginger",
+                "French":"Gingembre",
+                "Chinese": "姜"
+            }
+        },
+        {
+            "id": 39,
+            "path": "resources/carte/Giraffe.png",
+            "language": {
+                "English" : "Giraffe",
+                "French":"Girafe",
+                "Chinese": "长颈鹿"
+            }
+        },
+        {
+            "id": 40,
+            "path": "resources/carte/Glasses.png",
+            "language": {
+                "English" : "Glasses",
+                "French":"Lunettes",
+                "Chinese": "眼镜"
+            }
+        },
+        {
+            "id": 41,
+            "path": "resources/carte/Goat.png",
+            "language": {
+                "English" : "Goat",
+                "French":"Bouc",
+                "Chinese": "山羊"
+            }
+        },
+        {
+            "id": 42,
+            "path": "resources/carte/Gorilla.png",
+            "language": {
+                "English" : "Gorilla",
+                "French":"Gorille",
+                "Chinese": "大猩猩"
+            }
+        },
+        {
+            "id": 43,
+            "path": "resources/carte/Grape.png",
+            "language": {
+                "English" : "Grape",
+                "French":"Raisin",
+                "Chinese": "葡萄"
+            }
+        },
+        {
+            "id": 44,
+            "path": "resources/carte/Hedgehog.png",
+            "language": {
+                "English" : "Hedgehog",
+                "French":"Hérisson",
+                "Chinese": "刺猬"
+            }
+        },
+        {
+            "id": 45,
+            "path": "resources/carte/Hippo.png",
+            "language": {
+                "English" : "Hippo",
+                "French":"Hippopotame",
+                "Chinese": "河马"
+            }
+        },
+        {
+            "id": 46,
+            "path": "resources/carte/Horse.png",
+            "language": {
+                "English" : "Horse",
+                "French":"Cheval",
+                "Chinese": "马"
+            }
+        },
+        {
+            "id": 47,
+            "path": "resources/carte/Horseradish.png",
+            "language": {
+                "English" : "Horseradish",
+                "French":"Raifort",
+                "Chinese": "辣根"
+            }
+        },
+        {
+            "id": 48,
+            "path": "resources/carte/Jellyfish.png",
+            "language": {
+                "English" : "Jellyfish",
+                "French":"Méduse",
+                "Chinese": "水母"
+            }
+        },
+        {
+            "id": 49,
+            "path": "resources/carte/Kangaroo.png",
+            "language": {
+                "English" : "Kangaroo",
+                "French":"Kangourou",
+                "Chinese": "袋鼠"
+            }
+        },
+        {
+            "id": 50,
+            "path": "resources/carte/Key.png",
+            "language": {
+                "English" : "Key",
+                "French":"Clé",
+                "Chinese": "钥匙"
+            }
+        },
+        {
+            "id": 51,
+            "path": "resources/carte/Kiwi.png",
+            "language": {
+                "English" : "Kiwi",
+                "French":"kiwi",
+                "Chinese": "猕猴桃"
+            }
+        },
+        {
+            "id": 52,
+            "path": "resources/carte/Koala.png",
+            "language": {
+                "English" : "Koala",
+                "French":"Koala",
+                "Chinese": "考拉"
+            }
+        },
+        {
+            "id": 53,
+            "path": "resources/carte/Leek.png",
+            "language": {
+                "English" : "Leek",
+                "French":"Poireau",
+                "Chinese": "韭菜"
+            }
+        },
+        {
+            "id": 54,
+            "path": "resources/carte/Lemon.png",
+            "language": {
+                "English" : "Lemon",
+                "French":"Citron",
+                "Chinese": "柠檬"
+            }
+        },
+        {
+            "id": 55,
+            "path": "resources/carte/Lentils.png",
+            "language": {
+                "English" : "Lentils",
+                "French":"Lentilles",
+                "Chinese": "扁豆"
+            }
+        },
+        {
+            "id": 56,
+            "path": "resources/carte/Lion.png",
+            "language": {
+                "English" : "Lion",
+                "French":"Lion",
+                "Chinese": "狮子"
+            }
+        },
+        {
+            "id": 57,
+            "path": "resources/carte/Mint.png",
+            "language": {
+                "English" : "Mint",
+                "French":"Menthe",
+                "Chinese": "薄荷"
+            }
+        },
+        {
+            "id": 58,
+            "path": "resources/carte/Mole.png",
+            "language": {
+                "English" : "Mole",
+                "French":"Taupe",
+                "Chinese": "鼹鼠"
+            }
+        },
+        {
+            "id": 59,
+            "path": "resources/carte/Monkey.png",
+            "language": {
+                "English" : "Monkey",
+                "French":"Singe",
+                "Chinese": "猴子"
+            }
+        },
+        {
+            "id": 60,
+            "path": "resources/carte/Mouse.png",
+            "language": {
+                "English" : "Mouse",
+                "French":"Souris",
+                "Chinese": "老鼠"
+            }
+        },
+        {
+            "id": 61,
+            "path": "resources/carte/Mushroom.png",
+            "language": {
+                "English" : "Mushroom",
+                "French":"Champignon",
+                "Chinese": "蘑菇"
+            }
+        },
+        {
+            "id": 62,
+            "path": "resources/carte/Octopus.png",
+            "language": {
+                "English" : "Octopus",
+                "French":"Pieuvre",
+                "Chinese": "章鱼"
+            }
+        },
+        {
+            "id": 63,
+            "path": "resources/carte/Onion.png",
+            "language": {
+                "English" : "Onion",
+                "French":"Oignon",
+                "Chinese": "洋葱"
+            }
+        },
+        {
+            "id": 64,
+            "path": "resources/carte/Owl.png",
+            "language": {
+                "English" : "Owl",
+                "French":"Hibou",
+                "Chinese": "猫头鹰"
+            }
+        },
+        {
+            "id": 65,
+            "path": "resources/carte/Panda.png",
+            "language": {
+                "English" : "Panda",
+                "French":"Panda",
+                "Chinese": "熊猫"
+            }
+        },
+        {
+            "id": 66,
+            "path": "resources/carte/Parrot.png",
+            "language": {
+                "English" : "Parrot",
+                "French":"Perroquet",
+                "Chinese": "鹦鹉"
+            }
+        },
+        {
+            "id": 67,
+            "path": "resources/carte/Parsnip.png",
+            "language": {
+                "English" : "Parsnip",
+                "French":"Panais",
+                "Chinese": "欧防风"
+            }
+        },
+        {
+            "id": 68,
+            "path": "resources/carte/Peach.png",
+            "language": {
+                "English" : "Peach",
+                "French":"Pêche",
+                "Chinese": "桃子"
+            }
+        },
+        {
+            "id": 69,
+            "path": "resources/carte/Pear.png",
+            "language": {
+                "English" : "Pear",
+                "French":"Poire",
+                "Chinese": "梨"
+            }
+        },
+        {
+            "id": 70,
+            "path": "resources/carte/Peas.png",
+            "language": {
+                "English" : "Peas",
+                "French":"Petits pois",
+                "Chinese": "豌豆"
+            }
+        },
+        {
+            "id": 71,
+            "path": "resources/carte/Pig.png",
+            "language": {
+                "English" : "Pig",
+                "French":"Porc",
+                "Chinese": "猪"
+            }
+        },
+        {
+            "id": 72,
+            "path": "resources/carte/Pigeon.png",
+            "language": {
+                "English" : "Pigeon",
+                "French":"Pigeon",
+                "Chinese": "鸽子"
+            }
+        },
+        {
+            "id": 73,
+            "path": "resources/carte/Pillow.png",
+            "language": {
+                "English" : "Pillow",
+                "French":"Oreiller",
+                "Chinese": "枕头"
+            }
+        },
+        {
+            "id": 74,
+            "path": "resources/carte/Polar_bear.png",
+            "language": {
+                "English" : "Polar bear",
+                "French":"Ours polaire",
+                "Chinese": "北极熊"
+            }
+        },
+        {
+            "id": 75,
+            "path": "resources/carte/Potato.png",
+            "language": {
+                "English" : "Potato",
+                "French":"Pomme de terre",
+                "Chinese": "土豆"
+            }
+        },
+        {
+            "id": 76,
+            "path": "resources/carte/Rabbit.png",
+            "language": {
+                "English" : "Rabbit",
+                "French":"Lapin",
+                "Chinese": "兔子"
+            }
+        },
+        {
+            "id": 77,
+            "path": "resources/carte/Raccoon.png",
+            "language": {
+                "English" : "Raccoon",
+                "French":"Raton laveur",
+                "Chinese": "浣熊"
+            }
+        },
+        {
+            "id": 78,
+            "path": "resources/carte/Radish.png",
+            "language": {
+                "English" : "Radish",
+                "French":"Radis",
+                "Chinese": "萝卜"
+            }
+        },
+        {
+            "id": 79,
+            "path": "resources/carte/Rhino.png",
+            "language": {
+                "English" : "Rhino",
+                "French":"Rhinocéros",
+                "Chinese": "犀牛"
+            }
+        },
+        {
+            "id": 80,
+            "path": "resources/carte/Rutabaga.png",
+            "language": {
+                "English" : "Rutabaga",
+                "French":"Rutabaga",
+                "Chinese": "芜菁甘蓝"
+            }
+        },
+        {
+            "id": 81,
+            "path": "resources/carte/Scissors.png",
+            "language": {
+                "English" : "Scissors",
+                "French":"Ciseaux",
+                "Chinese": "剪刀"
+            }
+        },
+        {
+            "id": 82,
+            "path": "resources/carte/Shark.png",
+            "language": {
+                "English" : "Shark",
+                "French":"Requin",
+                "Chinese": "鲨鱼"
+            }
+        },
+        {
+            "id": 83,
+            "path": "resources/carte/Sheep.png",
+            "language": {
+                "English" : "Sheep",
+                "French":"Mouton",
+                "Chinese": "绵羊"
+            }
+        },
+        {
+            "id": 84,
+            "path": "resources/carte/Skunk.png",
+            "language": {
+                "English" : "Skunk",
+                "French":"Moufette",
+                "Chinese": "臭鼬"
+            }
+        },
+        {
+            "id": 85,
+            "path": "resources/carte/Smartphone.png",
+            "language": {
+                "English" : "Cell phone",
+                "French":"Portable",
+                "Chinese": "手机"
+            }
+        },
+        {
+            "id": 86,
+            "path": "resources/carte/Snake.png",
+            "language": {
+                "English" : "Snake",
+                "French":"Serpent",
+                "Chinese": "蛇"
+            }
+        },
+        {
+            "id": 87,
+            "path": "resources/carte/Spoon.png",
+            "language": {
+                "English" : "Spoon",
+                "French":"Cuillère",
+                "Chinese": "勺子"
+            }
+        },
+        {
+            "id": 88,
+            "path": "resources/carte/Squirrel.png",
+            "language": {
+                "English" : "Squirrel",
+                "French":"Écureuil",
+                "Chinese": "松鼠"
+            }
+        },
+        {
+            "id": 89,
+            "path": "resources/carte/Swan.png",
+            "language": {
+                "English" : "Swan",
+                "French":"Cygne",
+                "Chinese": "天鹅"
+            }
+        },
+        {
+            "id": 90,
+            "path": "resources/carte/Taro.png",
+            "language": {
+                "English" : "Taro",
+                "French":"Taro",
+                "Chinese": "芋头"
+            }
+        },
+        {
+            "id": 91,
+            "path": "resources/carte/Tiger.png",
+            "language": {
+                "English" : "Tiger",
+                "French":"Tigre",
+                "Chinese": "老虎"
+            }
+        },
+        {
+            "id": 92,
+            "path": "resources/carte/Tomato.png",
+            "language": {
+                "English" : "Tomato",
+                "French":"Tomate",
+                "Chinese": "西红柿"
+            }
+        },
+        {
+            "id": 93,
+            "path": "resources/carte/Turnip.png",
+            "language": {
+                "English" : "Turnip",
+                "French":"Navet",
+                "Chinese": "芜菁"
+            }
+        },
+        {
+            "id": 94,
+            "path": "resources/carte/Turtle.png",
+            "language": {
+                "English" : "Turtle",
+                "French":"Tortue",
+                "Chinese": "乌龟"
+            }
+        },
+        {
+            "id": 95,
+            "path": "resources/carte/Umbrella.png",
+            "language": {
+                "English" : "Umbrella",
+                "French":"Parapluie",
+                "Chinese": "雨伞"
+            }
+        },
+        {
+            "id": 96,
+            "path": "resources/carte/Watermelon.png",
+            "language": {
+                "English" : "Watermelon",
+                "French":"Pastèque",
+                "Chinese": "西瓜"
+            }
+        },
+        {
+            "id": 97,
+            "path": "resources/carte/Whale.png",
+            "language": {
+                "English" : "Whale",
+                "French":"Baleine",
+                "Chinese": "鲸鱼"
+            }
+        },
+        {
+            "id": 98,
+            "path": "resources/carte/Yak.png",
+            "language": {
+                "English" : "Yak",
+                "French":"Yak",
+                "Chinese": "耗牛"
+            }
+        },
+        {
+            "id": 99,
+            "path": "resources/carte/Yam.png",
+            "language": {
+                "English" : "Yam",
+                "French":"Igname",
+                "Chinese": "山药"
+            }
+        },
+        {
+            "id": 100,
+            "path": "resources/carte/Zebra.png",
+            "language": {
+                "English" : "Zebra",
+                "French":"Zèbre",
+                "Chinese": "斑马"
+            }
+        }
+    ]
+}
