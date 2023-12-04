@@ -42,10 +42,10 @@ function checkSpeechAvailable(){
 }
 
 function loadVoices() {
-    let voices = window.speechSynthesis.getVoices();
+    let voices = window.speechSynthesis.getVoices().filter(voice => voice.lang === document.getElementById("language-selection").value);
     console.log(voices);
     voices.forEach(voice => {
-        console.log("option");
+        console.log(voice.lang);
         let option = document.createElement("option");
         option.value = voice.name;
         option.innerHTML = voice.name;
@@ -84,6 +84,12 @@ document.getElementById("training-button").onclick = function () {
 
 document.getElementById("voiceTest").onclick = function () {
     speak("Bonjour");
+}
+
+document.getElementById("language-selection").onchange = function () {
+    voiceSelector.innerHTML = "";
+    loadVoices();
+    document.getElementById("voice-config").removeAttribute("hidden");
 }
 
 function loadCards(lang = "English"){
