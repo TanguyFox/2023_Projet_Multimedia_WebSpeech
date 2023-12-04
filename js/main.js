@@ -12,7 +12,7 @@ let train = document.getElementById("training-container");
 
 //READ Dict
 let dict = [];
-fetch("resources/dict/dict.json")
+fetch("ressources/dict/dict.json")
     .then(response => response.json())
     .then(json => {
         dict = json["dict"];
@@ -73,13 +73,13 @@ let cards = [];
 
 document.getElementById("startButton").onclick = function () {
     accueil.setAttribute("hidden", "hidden");
-    train.removeAttribute("hidden");
+    learn.removeAttribute("hidden");
     loadCards();
 }
 
 document.getElementById("training-button").onclick = function () {
-    train.setAttribute("hidden", "hidden");
-    learn.removeAttribute("hidden");
+    learn.setAttribute("hidden", "hidden");
+    train.removeAttribute("hidden");
 }
 
 document.getElementById("voiceTest").onclick = function () {
@@ -91,7 +91,7 @@ function loadCards(lang = "English"){
     cards = dict.slice(0, nbCards);
     for (let i = 0; i < nbCards; i++) {
         let card = createCard(cards[i]["language"][lang], cards[i]["path"]);
-        document.getElementById("train-cards").appendChild(card);
+        document.getElementById("learn-cards").appendChild(card);
     }
 }
 
