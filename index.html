@@ -7,6 +7,7 @@
 </head>
 <body>
 
+<!-- Message indiquant à l'utilisateur si son navigateur supporte la synthèse vocale -->
 <h4 id="speech-available" class="speechFrame"></h4>
 
 <div id="container-accueil">
@@ -14,8 +15,9 @@
     <h1>Bienvenue !</h1>
     <h3>Sur notre application, vous pourrez apprendre la prononciation des mots et retrouver les images correspondantes
         !</h3>
-    <h4>Commençons par configurer votre professeur :</h4>
+    <h4>Commençons par configurer votre assistant :</h4>
 
+    <!-- Choix de la langue -->
     <label for="language-selection">Quelle langue souhaitez vous apprendre ?</label>
     <select id="language-selection">
         <option disabled selected value="">Séléctionnez une langue</option>
@@ -25,19 +27,27 @@
         <option value="zh-CN">Chinois</option>
     </select>
 
+    <!--
+    Configuarion des paramètres de la voix
+    Les seules voix disponibles sont celles correspondant à la langue que veux apprendre l'utilisateur
+    -->
     <div class="voice-configuration" id="voice-config" hidden>
+
         <div class="option">
             <label for="voiceSelector">Voix</label>
             <select name="voice" id="voiceSelector"></select>
         </div>
+
         <div class="option">
             <label for="volume">Volume</label>
             <input type="range" min="0" max="1" step="0.1" name="volume" id="volume" value="1">
         </div>
+
         <div class="option">
             <label for="rate">Vitesse</label>
             <input type="range" min="0.1" max="2" step="0.1" name="rate" id="rate" value="1">
         </div>
+
         <div class="option">
             <label for="pitch">Ton</label>
             <input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1">
@@ -53,6 +63,7 @@
 
 <div id="container-learning" hidden>
 
+    <!-- Choix du thème d'apprentissage -->
     <label for="theme-selector">Choississez un thème</label>
     <select id="theme-selector">
         <option value="animals">Animaux</option>
@@ -62,7 +73,7 @@
 
     <h1>Cliquez sur une carte pour entendre la prononciation du mot !</h1>
 
-
+    <!-- Création des cartes en fonction du theme -->
     <div class="container" id="learn-cards">
         <!--        <div class="card">-->
         <!--            <div class="card-img"></div>-->
@@ -71,7 +82,6 @@
     </div>
 
     <button type="button" id="training-button">On s'entraine ?</button>
-
 </div>
 
 <div id="training-container" hidden>
@@ -79,9 +89,8 @@
     <label for="micro">Réécouter le mot :</label>
     <button type="button" id="micro">Micro</button>
 
-    <div class="container" id="train-cards">
-    </div>
-
+    <!-- Création des cartes en fonction du thème, sans le nom -->
+    <div class="container" id="train-cards"></div>
 
 </div>
 
