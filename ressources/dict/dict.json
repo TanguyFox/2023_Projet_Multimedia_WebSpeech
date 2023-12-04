@@ -2,7 +2,8 @@
     "dict" : [
         {
             "id": 1,
-            "path": "resources/carte/Alarm_clock.png",
+            "path": "ressources/carte/objects/Alarm_clock.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Alarm clock",
                 "French":"Réveil",
@@ -11,7 +12,8 @@
         },
         {
             "id": 2,
-            "path": "resources/carte/Anteater.png",
+            "path": "ressources/carte/animals/Anteater.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Anteater",
                 "French":"Fourmilier",
@@ -20,7 +22,8 @@
         },
         {
             "id": 3,
-            "path": "resources/carte/Apple.png",
+            "path": "ressources/carte/plants/Apple.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Apple",
                 "French":"Pomme",
@@ -29,7 +32,8 @@
         },
         {
             "id": 4,
-            "path": "resources/carte/Apricot.png",
+            "path": "ressources/carte/plants/Apricot.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Apricot",
                 "French":"Abricot",
@@ -38,7 +42,8 @@
         },
         {
             "id": 5,
-            "path": "resources/carte/Avocado.png",
+            "path": "ressources/carte/plants/Avocado.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Avocado",
                 "French":"Avocat",
@@ -47,7 +52,8 @@
         },
         {
             "id": 6,
-            "path": "resources/carte/Banana.png",
+            "path": "ressources/carte/plants/Banana.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Banana",
                 "French":"Banane",
@@ -56,7 +62,8 @@
         },
         {
             "id": 7,
-            "path": "resources/carte/Bear.png",
+            "path": "ressources/carte/animals/Bear.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Bear",
                 "French":"Ours",
@@ -65,7 +72,8 @@
         },
         {
             "id": 8,
-            "path": "resources/carte/Belt.png",
+            "path": "ressources/carte/animals/Belt.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Belt",
                 "French":"Ceinture",
@@ -74,16 +82,18 @@
         },
         {
             "id": 9,
-            "path": "resources/carte/Bucket.png",
+            "path": "ressources/carte/objects/Bucket.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Bucket",
-                "French":"Seau",
+                "French":"Sceau",
                 "Chinese": "桶"
             }
         },
         {
             "id": 10,
-            "path": "resources/carte/Candle.png",
+            "path": "ressources/carte/objects/Candle.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Candle",
                 "French":"Bougie",
@@ -92,7 +102,8 @@
         },
         {
             "id": 11,
-            "path": "resources/carte/Carrot.png",
+            "path": "ressources/carte/plants/Carrot.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Carrot",
                 "French":"Carotte",
@@ -101,7 +112,8 @@
         },
         {
             "id": 12,
-            "path": "resources/carte/Cat.png",
+            "path": "ressources/carte/animals/Cat.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Cat",
                 "French":"Chat",
@@ -110,7 +122,8 @@
         },
         {
             "id": 13,
-            "path": "resources/carte/Chameleon.png",
+            "path": "ressources/carte/animals/Chameleon.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Chameleon",
                 "French":"Caméléon",
@@ -119,7 +132,8 @@
         },
         {
             "id": 14,
-            "path": "resources/carte/Cherry.png",
+            "path": "ressources/carte/plants/Cherry.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Cherry",
                 "French":"Cerise",
@@ -128,7 +142,8 @@
         },
         {
             "id": 15,
-            "path": "resources/carte/Chicken.png",
+            "path": "ressources/carte/animals/Chicken.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Chicken",
                 "French":"Poulet",
@@ -137,7 +152,8 @@
         },
         {
             "id": 16,
-            "path": "resources/carte/Clementine.png",
+            "path": "ressources/carte/plants/Clementine.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Clementine",
                 "French":"Clémentine",
@@ -146,7 +162,8 @@
         },
         {
             "id": 17,
-            "path": "resources/carte/Coconut.png",
+            "path": "ressources/carte/plants/Coconut.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Coconut",
                 "French":"Noix de coco",
@@ -155,7 +172,8 @@
         },
         {
             "id": 18,
-            "path": "resources/carte/Corn.png",
+            "path": "ressources/carte/plants/Corn.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Corn",
                 "French":"Maïs",
@@ -164,7 +182,8 @@
         },
         {
             "id": 19,
-            "path": "resources/carte/Cow.png",
+            "path": "ressources/carte/animals/Cow.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Cow",
                 "French":"Vache",
@@ -173,7 +192,8 @@
         },
         {
             "id": 20,
-            "path": "resources/carte/Crab.png",
+            "path": "ressources/carte/animals/Crab.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Crab",
                 "French":"Crabe",
@@ -182,7 +202,8 @@
         },
         {
             "id": 21,
-            "path": "resources/carte/Crocodile.png",
+            "path": "ressources/carte/animals/Crocodile.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Crocodile",
                 "French":"Crocodile",
@@ -191,7 +212,8 @@
         },
         {
             "id": 22,
-            "path": "resources/carte/Cup.png",
+            "path": "ressources/carte/objects/Cup.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Cup",
                 "French":"Tasse",
@@ -200,7 +222,8 @@
         },
         {
             "id": 23,
-            "path": "resources/carte/Deer.png",
+            "path": "ressources/carte/animals/Deer.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Deer",
                 "French":"Cerf",
@@ -209,7 +232,8 @@
         },
         {
             "id": 24,
-            "path": "resources/carte/Dice.png",
+            "path": "ressources/carte/objects/Dice.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Dice",
                 "French":"Dé",
@@ -218,7 +242,8 @@
         },
         {
             "id": 25,
-            "path": "resources/carte/Dog.png",
+            "path": "ressources/carte/animals/Dog.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Dog",
                 "French":"Chien",
@@ -227,7 +252,8 @@
         },
         {
             "id": 26,
-            "path": "resources/carte/Dolphin.png",
+            "path": "ressources/carte/animals/Dolphin.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Dolphin",
                 "French":"Dauphin",
@@ -236,7 +262,8 @@
         },
         {
             "id": 27,
-            "path": "resources/carte/Donkey.png",
+            "path": "ressources/carte/animals/Donkey.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Donkey",
                 "French":"Âne",
@@ -245,7 +272,8 @@
         },
         {
             "id": 28,
-            "path": "resources/carte/Duck.png",
+            "path": "ressources/carte/animals/Duck.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Duck",
                 "French":"Canard",
@@ -254,7 +282,8 @@
         },
         {
             "id": 29,
-            "path": "resources/carte/Eagle.png",
+            "path": "ressources/carte/animals/Eagle.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Eagle",
                 "French":"Aigle",
@@ -263,7 +292,8 @@
         },
         {
             "id": 30,
-            "path": "resources/carte/Eggplant.png",
+            "path": "ressources/carte/plants/Eggplant.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Eggplant",
                 "French":"Aubergine",
@@ -272,7 +302,8 @@
         },
         {
             "id": 31,
-            "path": "resources/carte/Elephant.png",
+            "path": "ressources/carte/animals/Elephant.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Elephant",
                 "French":"Éléphant",
@@ -281,7 +312,8 @@
         },
         {
             "id": 32,
-            "path": "resources/carte/Fig.png",
+            "path": "ressources/carte/plants/Fig.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Fig",
                 "French":"Figue",
@@ -290,7 +322,8 @@
         },
         {
             "id": 33,
-            "path": "resources/carte/Fish.png",
+            "path": "ressources/carte/animals/Fish.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Fish",
                 "French":"Poisson",
@@ -299,7 +332,8 @@
         },
         {
             "id": 34,
-            "path": "resources/carte/Fork.png",
+            "path": "ressources/carte/objects/Fork.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Fork",
                 "French":"Fourchette",
@@ -308,7 +342,8 @@
         },
         {
             "id": 35,
-            "path": "resources/carte/Fox.png",
+            "path": "ressources/carte/animals/Fox.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Fox",
                 "French":"Renard",
@@ -317,7 +352,8 @@
         },
         {
             "id": 36,
-            "path": "resources/carte/Frog.png",
+            "path": "ressources/carte/animals/Frog.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Frog",
                 "French":"Grenouille",
@@ -326,7 +362,8 @@
         },
         {
             "id": 37,
-            "path": "resources/carte/Garlic.png",
+            "path": "ressources/carte/plants/Garlic.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Garlic",
                 "French":"Ail",
@@ -335,7 +372,8 @@
         },
         {
             "id": 38,
-            "path": "resources/carte/Ginger.png",
+            "path": "ressources/carte/plants/Ginger.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Ginger",
                 "French":"Gingembre",
@@ -344,7 +382,8 @@
         },
         {
             "id": 39,
-            "path": "resources/carte/Giraffe.png",
+            "path": "ressources/carte/animals/Giraffe.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Giraffe",
                 "French":"Girafe",
@@ -353,7 +392,8 @@
         },
         {
             "id": 40,
-            "path": "resources/carte/Glasses.png",
+            "path": "ressources/carte/animals/Glasses.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Glasses",
                 "French":"Lunettes",
@@ -362,7 +402,8 @@
         },
         {
             "id": 41,
-            "path": "resources/carte/Goat.png",
+            "path": "ressources/carte/animals/Goat.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Goat",
                 "French":"Bouc",
@@ -371,7 +412,8 @@
         },
         {
             "id": 42,
-            "path": "resources/carte/Gorilla.png",
+            "path": "ressources/carte/animals/Gorilla.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Gorilla",
                 "French":"Gorille",
@@ -380,7 +422,8 @@
         },
         {
             "id": 43,
-            "path": "resources/carte/Grape.png",
+            "path": "ressources/carte/plants/Grape.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Grape",
                 "French":"Raisin",
@@ -389,7 +432,8 @@
         },
         {
             "id": 44,
-            "path": "resources/carte/Hedgehog.png",
+            "path": "ressources/carte/animals/Hedgehog.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Hedgehog",
                 "French":"Hérisson",
@@ -398,7 +442,8 @@
         },
         {
             "id": 45,
-            "path": "resources/carte/Hippo.png",
+            "path": "ressources/carte/animals/Hippo.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Hippo",
                 "French":"Hippopotame",
@@ -407,7 +452,8 @@
         },
         {
             "id": 46,
-            "path": "resources/carte/Horse.png",
+            "path": "ressources/carte/animals/Horse.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Horse",
                 "French":"Cheval",
@@ -416,7 +462,8 @@
         },
         {
             "id": 47,
-            "path": "resources/carte/Horseradish.png",
+            "path": "ressources/carte/plants/Horseradish.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Horseradish",
                 "French":"Raifort",
@@ -425,7 +472,8 @@
         },
         {
             "id": 48,
-            "path": "resources/carte/Jellyfish.png",
+            "path": "ressources/carte/animals/Jellyfish.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Jellyfish",
                 "French":"Méduse",
@@ -434,7 +482,8 @@
         },
         {
             "id": 49,
-            "path": "resources/carte/Kangaroo.png",
+            "path": "ressources/carte/animals/Kangaroo.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Kangaroo",
                 "French":"Kangourou",
@@ -443,7 +492,8 @@
         },
         {
             "id": 50,
-            "path": "resources/carte/Key.png",
+            "path": "ressources/carte/objects/Key.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Key",
                 "French":"Clé",
@@ -452,7 +502,8 @@
         },
         {
             "id": 51,
-            "path": "resources/carte/Kiwi.png",
+            "path": "ressources/carte/plants/Kiwi.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Kiwi",
                 "French":"kiwi",
@@ -461,7 +512,8 @@
         },
         {
             "id": 52,
-            "path": "resources/carte/Koala.png",
+            "path": "ressources/carte/animals/Koala.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Koala",
                 "French":"Koala",
@@ -470,7 +522,8 @@
         },
         {
             "id": 53,
-            "path": "resources/carte/Leek.png",
+            "path": "ressources/carte/plants/Leek.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Leek",
                 "French":"Poireau",
@@ -479,7 +532,8 @@
         },
         {
             "id": 54,
-            "path": "resources/carte/Lemon.png",
+            "path": "ressources/carte/plants/Lemon.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Lemon",
                 "French":"Citron",
@@ -488,7 +542,8 @@
         },
         {
             "id": 55,
-            "path": "resources/carte/Lentils.png",
+            "path": "ressources/carte/plants/Lentils.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Lentils",
                 "French":"Lentilles",
@@ -497,7 +552,8 @@
         },
         {
             "id": 56,
-            "path": "resources/carte/Lion.png",
+            "path": "ressources/carte/animals/Lion.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Lion",
                 "French":"Lion",
@@ -506,7 +562,8 @@
         },
         {
             "id": 57,
-            "path": "resources/carte/Mint.png",
+            "path": "ressources/carte/plants/Mint.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Mint",
                 "French":"Menthe",
@@ -515,7 +572,8 @@
         },
         {
             "id": 58,
-            "path": "resources/carte/Mole.png",
+            "path": "ressources/carte/animals/Mole.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Mole",
                 "French":"Taupe",
@@ -524,7 +582,8 @@
         },
         {
             "id": 59,
-            "path": "resources/carte/Monkey.png",
+            "path": "ressources/carte/animals/Monkey.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Monkey",
                 "French":"Singe",
@@ -533,7 +592,8 @@
         },
         {
             "id": 60,
-            "path": "resources/carte/Mouse.png",
+            "path": "ressources/carte/animals/Mouse.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Mouse",
                 "French":"Souris",
@@ -542,7 +602,8 @@
         },
         {
             "id": 61,
-            "path": "resources/carte/Mushroom.png",
+            "path": "ressources/carte/plants/Mushroom.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Mushroom",
                 "French":"Champignon",
@@ -551,7 +612,8 @@
         },
         {
             "id": 62,
-            "path": "resources/carte/Octopus.png",
+            "path": "ressources/carte/animals/Octopus.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Octopus",
                 "French":"Pieuvre",
@@ -560,7 +622,8 @@
         },
         {
             "id": 63,
-            "path": "resources/carte/Onion.png",
+            "path": "ressources/carte/plants/Onion.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Onion",
                 "French":"Oignon",
@@ -569,7 +632,8 @@
         },
         {
             "id": 64,
-            "path": "resources/carte/Owl.png",
+            "path": "ressources/carte/animals/Owl.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Owl",
                 "French":"Hibou",
@@ -578,7 +642,8 @@
         },
         {
             "id": 65,
-            "path": "resources/carte/Panda.png",
+            "path": "ressources/carte/animals/Panda.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Panda",
                 "French":"Panda",
@@ -587,7 +652,8 @@
         },
         {
             "id": 66,
-            "path": "resources/carte/Parrot.png",
+            "path": "ressources/carte/animals/Parrot.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Parrot",
                 "French":"Perroquet",
@@ -596,7 +662,8 @@
         },
         {
             "id": 67,
-            "path": "resources/carte/Parsnip.png",
+            "path": "ressources/carte/plants/Parsnip.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Parsnip",
                 "French":"Panais",
@@ -605,7 +672,8 @@
         },
         {
             "id": 68,
-            "path": "resources/carte/Peach.png",
+            "path": "ressources/carte/plants/Peach.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Peach",
                 "French":"Pêche",
@@ -614,7 +682,8 @@
         },
         {
             "id": 69,
-            "path": "resources/carte/Pear.png",
+            "path": "ressources/carte/plants/Pear.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Pear",
                 "French":"Poire",
@@ -623,7 +692,8 @@
         },
         {
             "id": 70,
-            "path": "resources/carte/Peas.png",
+            "path": "ressources/carte/plants/Peas.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Peas",
                 "French":"Petits pois",
@@ -632,7 +702,8 @@
         },
         {
             "id": 71,
-            "path": "resources/carte/Pig.png",
+            "path": "ressources/carte/animals/Pig.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Pig",
                 "French":"Porc",
@@ -641,7 +712,8 @@
         },
         {
             "id": 72,
-            "path": "resources/carte/Pigeon.png",
+            "path": "ressources/carte/animals/Pigeon.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Pigeon",
                 "French":"Pigeon",
@@ -650,7 +722,8 @@
         },
         {
             "id": 73,
-            "path": "resources/carte/Pillow.png",
+            "path": "ressources/carte/objects/Pillow.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Pillow",
                 "French":"Oreiller",
@@ -659,7 +732,8 @@
         },
         {
             "id": 74,
-            "path": "resources/carte/Polar_bear.png",
+            "path": "ressources/carte/animals/Polar_bear.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Polar bear",
                 "French":"Ours polaire",
@@ -668,7 +742,8 @@
         },
         {
             "id": 75,
-            "path": "resources/carte/Potato.png",
+            "path": "ressources/carte/plants/Potato.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Potato",
                 "French":"Pomme de terre",
@@ -677,7 +752,8 @@
         },
         {
             "id": 76,
-            "path": "resources/carte/Rabbit.png",
+            "path": "ressources/carte/animals/Rabbit.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Rabbit",
                 "French":"Lapin",
@@ -686,7 +762,8 @@
         },
         {
             "id": 77,
-            "path": "resources/carte/Raccoon.png",
+            "path": "ressources/carte/animals/Raccoon.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Raccoon",
                 "French":"Raton laveur",
@@ -695,7 +772,8 @@
         },
         {
             "id": 78,
-            "path": "resources/carte/Radish.png",
+            "path": "ressources/carte/plants/Radish.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Radish",
                 "French":"Radis",
@@ -704,7 +782,8 @@
         },
         {
             "id": 79,
-            "path": "resources/carte/Rhino.png",
+            "path": "ressources/carte/animals/Rhino.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Rhino",
                 "French":"Rhinocéros",
@@ -713,7 +792,8 @@
         },
         {
             "id": 80,
-            "path": "resources/carte/Rutabaga.png",
+            "path": "ressources/carte/plants/Rutabaga.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Rutabaga",
                 "French":"Rutabaga",
@@ -722,7 +802,8 @@
         },
         {
             "id": 81,
-            "path": "resources/carte/Scissors.png",
+            "path": "ressources/carte/objects/Scissors.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Scissors",
                 "French":"Ciseaux",
@@ -731,7 +812,8 @@
         },
         {
             "id": 82,
-            "path": "resources/carte/Shark.png",
+            "path": "ressources/carte/animals/Shark.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Shark",
                 "French":"Requin",
@@ -740,7 +822,8 @@
         },
         {
             "id": 83,
-            "path": "resources/carte/Sheep.png",
+            "path": "ressources/carte/animals/Sheep.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Sheep",
                 "French":"Mouton",
@@ -749,7 +832,8 @@
         },
         {
             "id": 84,
-            "path": "resources/carte/Skunk.png",
+            "path": "ressources/carte/animals/Skunk.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Skunk",
                 "French":"Moufette",
@@ -758,7 +842,8 @@
         },
         {
             "id": 85,
-            "path": "resources/carte/Smartphone.png",
+            "path": "ressources/carte/objects/Smartphone.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Cell phone",
                 "French":"Portable",
@@ -767,7 +852,8 @@
         },
         {
             "id": 86,
-            "path": "resources/carte/Snake.png",
+            "path": "ressources/carte/animals/Snake.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Snake",
                 "French":"Serpent",
@@ -776,7 +862,8 @@
         },
         {
             "id": 87,
-            "path": "resources/carte/Spoon.png",
+            "path": "ressources/carte/objects/Spoon.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Spoon",
                 "French":"Cuillère",
@@ -785,7 +872,8 @@
         },
         {
             "id": 88,
-            "path": "resources/carte/Squirrel.png",
+            "path": "ressources/carte/animals/Squirrel.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Squirrel",
                 "French":"Écureuil",
@@ -794,7 +882,8 @@
         },
         {
             "id": 89,
-            "path": "resources/carte/Swan.png",
+            "path": "ressources/carte/animals/Swan.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Swan",
                 "French":"Cygne",
@@ -803,7 +892,8 @@
         },
         {
             "id": 90,
-            "path": "resources/carte/Taro.png",
+            "path": "ressources/carte/plants/Taro.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Taro",
                 "French":"Taro",
@@ -812,7 +902,8 @@
         },
         {
             "id": 91,
-            "path": "resources/carte/Tiger.png",
+            "path": "ressources/carte/animals/Tiger.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Tiger",
                 "French":"Tigre",
@@ -821,7 +912,8 @@
         },
         {
             "id": 92,
-            "path": "resources/carte/Tomato.png",
+            "path": "ressources/carte/plants/Tomato.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Tomato",
                 "French":"Tomate",
@@ -830,7 +922,8 @@
         },
         {
             "id": 93,
-            "path": "resources/carte/Turnip.png",
+            "path": "ressources/carte/plants/Turnip.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Turnip",
                 "French":"Navet",
@@ -839,7 +932,8 @@
         },
         {
             "id": 94,
-            "path": "resources/carte/Turtle.png",
+            "path": "ressources/carte/animals/Turtle.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Turtle",
                 "French":"Tortue",
@@ -848,7 +942,8 @@
         },
         {
             "id": 95,
-            "path": "resources/carte/Umbrella.png",
+            "path": "ressources/carte/objects/Umbrella.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Umbrella",
                 "French":"Parapluie",
@@ -857,7 +952,8 @@
         },
         {
             "id": 96,
-            "path": "resources/carte/Watermelon.png",
+            "path": "ressources/carte/plants/Watermelon.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Watermelon",
                 "French":"Pastèque",
@@ -866,7 +962,8 @@
         },
         {
             "id": 97,
-            "path": "resources/carte/Whale.png",
+            "path": "ressources/carte/animals/Whale.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Whale",
                 "French":"Baleine",
@@ -875,7 +972,8 @@
         },
         {
             "id": 98,
-            "path": "resources/carte/Yak.png",
+            "path": "ressources/carte/animals/Yak.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Yak",
                 "French":"Yak",
@@ -884,7 +982,8 @@
         },
         {
             "id": 99,
-            "path": "resources/carte/Yam.png",
+            "path": "ressources/carte/plants/Yam.png",
+            "theme" : "plants",
             "language": {
                 "English" : "Yam",
                 "French":"Igname",
@@ -893,7 +992,8 @@
         },
         {
             "id": 100,
-            "path": "resources/carte/Zebra.png",
+            "path": "ressources/carte/animals/Zebra.png",
+            "theme" : "animals",
             "language": {
                 "English" : "Zebra",
                 "French":"Zèbre",
