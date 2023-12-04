@@ -74,6 +74,7 @@ let cards = [];
 document.getElementById("startButton").onclick = function () {
     accueil.setAttribute("hidden", "hidden");
     learn.removeAttribute("hidden");
+    speechMSG.setAttribute("hidden", "hidden");
     loadCards();
 }
 
@@ -86,9 +87,9 @@ document.getElementById("voiceTest").onclick = function () {
     speak("Bonjour");
 }
 
-function loadCards(lang = "English"){
+function loadCards(lang = "English", theme = "animals") {
     let nbCards = 9;
-    cards = dict.slice(0, nbCards);
+    cards = dict.filter(card => card['theme'] === theme).slice(0, nbCards);
     for (let i = 0; i < nbCards; i++) {
         let card = createCard(cards[i]["language"][lang], cards[i]["path"]);
         document.getElementById("learn-cards").appendChild(card);
@@ -107,4 +108,11 @@ function createCard(title, imgPath){
     card.appendChild(cardTitle);
     return card;
 }
+
+learn.addEventListener("click", function (e) {
+    console.log(e.target.innerHTML);
+    if(e.target.classList.contains("card")){
+        speak(e.target.lastChild.innerHTML);
+    }
+});
 

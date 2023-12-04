@@ -72,8 +72,8 @@
         },
         {
             "id": 8,
-            "path": "ressources/carte/animals/Belt.png",
-            "theme" : "animals",
+            "path": "ressources/carte/objects/Belt.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Belt",
                 "French":"Ceinture",
@@ -392,8 +392,8 @@
         },
         {
             "id": 40,
-            "path": "ressources/carte/animals/Glasses.png",
-            "theme" : "animals",
+            "path": "ressources/carte/objects/Glasses.png",
+            "theme" : "objects",
             "language": {
                 "English" : "Glasses",
                 "French":"Lunettes",
