@@ -1,3 +1,8 @@
+body{
+    margin : 25px;
+    font-family: Arial, sans-serif;
+}
+
 .card {
     user-select: none;
     text-align: center;
@@ -24,15 +29,15 @@
     text-align: center;
 }
 
-.container img {
+.card-grid img {
     width: 160px;
     height: 160px;
 }
 
-.container {
-    justify-content: center;
+.card-grid {
     display: grid;
     grid: repeat(3, 200px) / repeat(3, 200px);
+    justify-content: center;
 }
 
 .warningMsg {
@@ -49,4 +54,14 @@
 .speechFrame {
     border: 1px solid black;
     padding: 5px;
+}
+
+.voice-configuration {
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: darkgrey;
+}
+
+.option {
+    margin: 20px;
 }

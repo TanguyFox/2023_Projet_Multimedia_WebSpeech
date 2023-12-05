@@ -42,10 +42,9 @@ function checkSpeechAvailable(){
 }
 
 function loadVoices() {
-    let voices = window.speechSynthesis.getVoices();
+    let voices = window.speechSynthesis.getVoices().filter(voice => voice.lang === document.getElementById("language-selection").value);
     console.log(voices);
     voices.forEach(voice => {
-        console.log("option");
         let option = document.createElement("option");
         option.value = voice.name;
         option.innerHTML = voice.name;
@@ -74,7 +73,6 @@ let cards = [];
 document.getElementById("startButton").onclick = function () {
     accueil.setAttribute("hidden", "hidden");
     learn.removeAttribute("hidden");
-    speechMSG.setAttribute("hidden", "hidden");
     loadCards();
 }
 
@@ -87,7 +85,13 @@ document.getElementById("voiceTest").onclick = function () {
     speak("Bonjour");
 }
 
-function loadCards(lang = "English", theme = "animals") {
+document.getElementById("language-selection").onchange = function () {
+    voiceSelector.innerHTML = "";
+    loadVoices();
+    document.getElementById("voice-config").removeAttribute("hidden");
+}
+
+function loadCards(lang = "English", theme = "animals"){
     let nbCards = 9;
     cards = dict.filter(card => card['theme'] === theme).slice(0, nbCards);
     for (let i = 0; i < nbCards; i++) {
