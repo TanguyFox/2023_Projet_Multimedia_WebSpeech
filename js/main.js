@@ -110,9 +110,11 @@ function createCard(title, imgPath){
 }
 
 learn.addEventListener("click", function (e) {
-    console.log(e.target.innerHTML);
-    if(e.target.classList.contains("card")){
-        speak(e.target.lastChild.innerHTML);
-    }
+    let node = e.target.parentNode;
+    speak(node.lastElementChild.innerHTML);
+    node.classList.add("clicked")
+    setTimeout(() => {
+        node.classList.remove('clicked');
+    }, 500);
 });
 
