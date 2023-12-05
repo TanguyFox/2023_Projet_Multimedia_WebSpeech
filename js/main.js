@@ -11,12 +11,14 @@ let themeSelector = document.getElementById("theme-selector");
 let learn = document.getElementById("container-learning");
 let learningCards = learn.querySelector("#learn-cards");
 let train = document.getElementById("training-container");
+let trainingCards = document.getElementById("train-cards");
 
 //LANGUAGE ATTRIBUTES
 let language, datalang;
 
 //READ Dict
 let dict = [];
+let cardList = [];
 fetch("ressources/dict/dict.json")
     .then(response => response.json())
     .then(json => {
@@ -104,7 +106,7 @@ function loadCards(lang, theme){
     cards = dict.filter(card => card['theme'] === theme).slice(0, nbCards);
     for (let i = 0; i < nbCards; i++) {
         let card = createCard(cards[i]["language"][lang], cards[i]["path"]);
-        document.getElementById("learn-cards").appendChild(card);
+        cardList.push(card);
     }
 }
 
@@ -133,7 +135,14 @@ learningCards.addEventListener("click", function (e) {
 
 themeSelector.onchange = function () {
     learningCards.innerHTML = "";
+    cardList = [];
     loadCards(language, this.value);
+    cardList.forEach(card => learningCards.appendChild(card));
     learn.querySelector("#learning-playzone").removeAttribute("hidden");
 }
 
+document.getElementById("training-button").onclick = function () {
+    learn.setAttribute("hidden", "hidden");
+    train.removeAttribute("hidden");
+    cardList.forEach(card => trainingCards.appendChild(card));
+}
