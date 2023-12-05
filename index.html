@@ -21,10 +21,10 @@
     <label for="language-selection">Quelle langue souhaitez vous apprendre ?</label>
     <select id="language-selection">
         <option disabled selected value="">Séléctionnez une langue</option>
-        <option value="fr-FR">Français</option>
-        <option value="en-US">Anglais (USA)</option>
-        <option value="en-GB">Anglais (Royaume-Uni)</option>
-        <option value="zh-CN">Chinois</option>
+        <option data-lang="fr-FR" value="French">Français</option>
+        <option data-lang="en-US" value="English">Anglais (USA)</option>
+        <option data-lang="en-GB" value="English">Anglais (Royaume-Uni)</option>
+        <option data-lang="zh-CN" value="Chinese">Chinois</option>
     </select>
 
     <!--
@@ -65,23 +65,26 @@
 
     <!-- Choix du thème d'apprentissage -->
     <label for="theme-selector">Choississez un thème</label>
-    <select id="theme-selector">
+    <select id="theme-selector" >
+        <option value="" disabled selected>Sélectionnez un thème</option>
         <option value="animals">Animaux</option>
         <option value="objects">Objets</option>
         <option value="plants">Fruits / Légumes / Plants</option>
     </select>
 
-    <h1>Cliquez sur une carte pour entendre la prononciation du mot !</h1>
+    <div id="learning-playzone" hidden>
+        <h1>Cliquez sur une carte pour entendre la prononciation du mot !</h1>
 
-    <!-- Création des cartes en fonction du theme -->
-    <div class="card-grid" id="learn-cards">
-        <!--        <div class="card">-->
-        <!--            <div class="card-img"></div>-->
-        <!--            <h2 class="card-title" hidden></h2>-->
-        <!--        </div>-->
+        <!-- Création des cartes en fonction du theme -->
+        <div class="card-grid" id="learn-cards">
+            <!--        <div class="card">-->
+            <!--            <div class="card-img"></div>-->
+            <!--            <h2 class="card-title" hidden></h2>-->
+            <!--        </div>-->
+        </div>
+
+        <button type="button" id="training-button">On s'entraine ?</button>
     </div>
-
-    <button type="button" id="training-button">On s'entraine ?</button>
 </div>
 
 <div id="training-container" hidden>

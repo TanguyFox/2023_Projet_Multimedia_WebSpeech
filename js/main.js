@@ -7,8 +7,13 @@ let pitch = document.getElementById("pitch");
 //GET DOM ELEMENTS
 let speechMSG = document.getElementById("speech-available");
 let accueil = document.getElementById("container-accueil");
+let themeSelector = document.getElementById("theme-selector");
 let learn = document.getElementById("container-learning");
+let learningCards = learn.querySelector("#learn-cards");
 let train = document.getElementById("training-container");
+
+//LANGUAGE ATTRIBUTES
+let language, datalang;
 
 //READ Dict
 let dict = [];
@@ -41,8 +46,8 @@ function checkSpeechAvailable(){
     }
 }
 
-function loadVoices() {
-    let voices = window.speechSynthesis.getVoices().filter(voice => voice.lang === document.getElementById("language-selection").value);
+function loadVoices(lang) {
+    let voices = window.speechSynthesis.getVoices().filter(voice => voice.lang === lang);
     console.log(voices);
     voices.forEach(voice => {
         let option = document.createElement("option");
@@ -73,7 +78,6 @@ let cards = [];
 document.getElementById("startButton").onclick = function () {
     accueil.setAttribute("hidden", "hidden");
     learn.removeAttribute("hidden");
-    loadCards();
 }
 
 document.getElementById("training-button").onclick = function () {
@@ -87,11 +91,15 @@ document.getElementById("voiceTest").onclick = function () {
 
 document.getElementById("language-selection").onchange = function () {
     voiceSelector.innerHTML = "";
-    loadVoices();
+
+    let index = this.selectedIndex
+    language = this.value;
+    datalang = this.options[index].dataset.lang
+    loadVoices(datalang);
     document.getElementById("voice-config").removeAttribute("hidden");
 }
 
-function loadCards(lang = "English", theme = "animals"){
+function loadCards(lang, theme){
     let nbCards = 9;
     cards = dict.filter(card => card['theme'] === theme).slice(0, nbCards);
     for (let i = 0; i < nbCards; i++) {
@@ -113,12 +121,19 @@ function createCard(title, imgPath){
     return card;
 }
 
-learn.addEventListener("click", function (e) {
+learningCards.addEventListener("click", function (e) {
     let node = e.target.parentNode;
+    console.log(e.target)
     speak(node.lastElementChild.innerHTML);
     node.classList.add("clicked")
     setTimeout(() => {
         node.classList.remove('clicked');
     }, 500);
 });
+
+themeSelector.onchange = function () {
+    learningCards.innerHTML = "";
+    loadCards(language, this.value);
+    learn.querySelector("#learning-playzone").removeAttribute("hidden");
+}
 
