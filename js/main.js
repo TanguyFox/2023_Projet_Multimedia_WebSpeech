@@ -12,13 +12,27 @@ let learn = document.getElementById("container-learning");
 let learningCards = learn.querySelector("#learn-cards");
 let train = document.getElementById("training-container");
 let trainingCards = document.getElementById("train-cards");
+let languageSelector = document.getElementById("language-selection");
+let micro = document.getElementById("micro");
 
 //LANGUAGE ATTRIBUTES
 let language, datalang;
 
+let vocalMsg = {
+    "Vrai" : {
+        "French": "Bonne Réponse",
+        "English": "Correct",
+        "Chinese": "正确"
+    },
+    "Faux" : {
+        "French": "Mauvaise Réponse",
+        "English": "Incorrect",
+        "Chinese": "错误"
+    }
+}
+
 //READ Dict
 let dict = [];
-let cardList = [];
 fetch("ressources/dict/dict.json")
     .then(response => response.json())
     .then(json => {
@@ -60,6 +74,7 @@ function loadVoices(lang) {
 }
 
 function speak(text) {
+
     let msg = new SpeechSynthesisUtterance()
     msg.text = text;
 
@@ -75,6 +90,7 @@ function speak(text) {
 
 window.onload = checkSpeechAvailable
 
+let nbCards = 9;
 let cards = [];
 
 document.getElementById("startButton").onclick = function () {
@@ -91,9 +107,8 @@ document.getElementById("voiceTest").onclick = function () {
     speak("Bonjour");
 }
 
-document.getElementById("language-selection").onchange = function () {
+languageSelector.onchange = function () {
     voiceSelector.innerHTML = "";
-
     let index = this.selectedIndex
     language = this.value;
     datalang = this.options[index].dataset.lang
@@ -101,12 +116,11 @@ document.getElementById("language-selection").onchange = function () {
     document.getElementById("voice-config").removeAttribute("hidden");
 }
 
-function loadCards(lang, theme){
-    let nbCards = 9;
-    cards = dict.filter(card => card['theme'] === theme).slice(0, nbCards);
+function loadCards(node, lang){
+    node.innerHTML = "";
     for (let i = 0; i < nbCards; i++) {
         let card = createCard(cards[i]["language"][lang], cards[i]["path"]);
-        cardList.push(card);
+        node.appendChild(card);
     }
 }
 
@@ -124,25 +138,139 @@ function createCard(title, imgPath){
 }
 
 learningCards.addEventListener("click", function (e) {
-    let node = e.target.parentNode;
-    console.log(e.target)
+    let node;
+    if(e.target.parentNode.classList.contains("card")){
+        node = e.target.parentNode;
+    }else if(e.target.classList.contains("card")){
+        node = e.target;
+    }else{
+        return;
+    }
+
+    window.speechSynthesis.cancel();
     speak(node.lastElementChild.innerHTML);
+
     node.classList.add("clicked")
+
     setTimeout(() => {
         node.classList.remove('clicked');
     }, 500);
+
 });
 
 themeSelector.onchange = function () {
-    learningCards.innerHTML = "";
-    cardList = [];
-    loadCards(language, this.value);
-    cardList.forEach(card => learningCards.appendChild(card));
+    shuffleList(dict);
+    cards = dict.filter(card => card['theme'] === themeSelector.value).slice(0, nbCards);
+    loadCards(learningCards, language);
     learn.querySelector("#learning-playzone").removeAttribute("hidden");
 }
+
+let question;
+let score = 0;
+let cardList = [];
+let old_answers = [];
 
 document.getElementById("training-button").onclick = function () {
     learn.setAttribute("hidden", "hidden");
     train.removeAttribute("hidden");
-    cardList.forEach(card => trainingCards.appendChild(card));
+    shuffleList(cards);
+    loadCards(trainingCards, language);
+
+    for(let i = 0; i < cards.length ; i++){
+        cardList.push({
+            "indice": i,
+            "texte": cards[i]["language"][language]
+        })
+    }
+
+    shuffleList(cardList);
+    question = cardList.pop();
+    speak(question['texte']);
 }
+
+//Micro
+micro.onclick = function () {
+    window.speechSynthesis.cancel();
+    speak(question['texte']);
+}
+
+let nbEssaies = 1;
+trainingCards.addEventListener("click", function (e) {
+    let node;
+    if(e.target.parentNode.classList.contains("card")){
+        node = e.target.parentNode;
+    }else if(e.target.classList.contains("card")){
+        node = e.target;
+    }else{
+        return;
+    }
+
+    let answer = node.lastElementChild.innerHTML;
+
+    if(old_answers.includes(answer)){
+        return;
+    }
+
+    if(answer === question["texte"]){
+
+        speak(vocalMsg['Vrai'][language]);
+
+        node.classList.add("correct");
+        old_answers.push(answer);
+
+        shuffleList(cardList);
+        question = cardList.pop();
+        nbEssaies = 1;
+        score++;
+        if(question){
+            speak(question['texte']);
+        }else {
+            gameOver();
+        }
+
+    }else{
+
+        speak(vocalMsg['Faux'][language]);
+
+        if(nbEssaies > 0){
+
+            node.classList.add("incorrect");
+            setTimeout(() => {
+                node.classList.remove('incorrect');
+            }, 500);
+            nbEssaies--;
+        }else{
+            node.classList.add("incorrect");
+            setTimeout(() => {
+                node.classList.remove('incorrect');
+            }, 500);
+
+            trainingCards.children[question["indice"]].classList.add("incorrect");
+            nbEssaies = 1;
+            old_answers.push(question["texte"]);
+
+            shuffleList(cardList);
+            question = cardList.pop();
+            if(question){
+                speak(question['texte']);
+            }else {
+                gameOver();
+            }
+        }
+    }
+});
+
+function gameOver(){
+    window.speechSynthesis.cancel();
+    document.getElementById("micro-container").hidden = true;
+    document.getElementById("fin_jeu-container").hidden = false;
+    document.getElementById("fin_jeu-info").textContent = `Fin du jeu ! Votre score est de ${score}.`;
+    document.getElementById("again-container").hidden = false;
+}
+
+document.getElementById("again-button").onclick = function (){
+    location.reload();
+}
+
+
+

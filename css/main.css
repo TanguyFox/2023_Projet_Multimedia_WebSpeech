@@ -19,6 +19,16 @@ body{
     background-color: lightgreen;
 }
 
+.card.correct{
+    background-color: lightgreen;
+    cursor: auto;
+}
+
+.card.incorrect{
+    background-color: red;
+    cursor: auto;
+}
+
 .card-title {
     font-weight: bold;
     font-size: 20px;
@@ -29,7 +39,9 @@ body{
     text-align: center;
 }
 
+
 .card-grid img {
+    -webkit-user-drag: none;
     width: 160px;
     height: 160px;
 }
