@@ -28,6 +28,11 @@ let vocalMsg = {
         "French": "Mauvaise Réponse",
         "English": "Incorrect",
         "Chinese": "错误"
+    },
+    "Greeting":{
+        "French": "Bonjour",
+        "English": "Hello",
+        "Chinese": "你好"
     }
 }
 
@@ -104,7 +109,7 @@ document.getElementById("training-button").onclick = function () {
 }
 
 document.getElementById("voiceTest").onclick = function () {
-    speak("Bonjour");
+    speak(vocalMsg['Greeting'][language]);
 }
 
 languageSelector.onchange = function () {
@@ -213,6 +218,8 @@ trainingCards.addEventListener("click", function (e) {
 
     if(answer === question["texte"]){
 
+        window.speechSynthesis.cancel();
+
         speak(vocalMsg['Vrai'][language]);
 
         node.classList.add("correct");
@@ -229,6 +236,8 @@ trainingCards.addEventListener("click", function (e) {
         }
 
     }else{
+
+        window.speechSynthesis.cancel();
 
         speak(vocalMsg['Faux'][language]);
 
