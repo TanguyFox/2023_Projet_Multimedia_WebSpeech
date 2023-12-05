@@ -121,24 +121,27 @@ languageSelector.onchange = function () {
     document.getElementById("voice-config").removeAttribute("hidden");
 }
 
-function loadCards(node, lang){
+function loadCards(node, lang, displayTitle){
     node.innerHTML = "";
     for (let i = 0; i < nbCards; i++) {
-        let card = createCard(cards[i]["language"][lang], cards[i]["path"]);
+        let card = createCard(cards[i]["language"][lang], cards[i]["path"], displayTitle);
         node.appendChild(card);
     }
 }
 
-function createCard(title, imgPath){
+function createCard(title, imgPath, displayTitle){
     let card = document.createElement('div');
     card.classList.add("card");
     let img = document.createElement('img');
     img.src = imgPath;
+    card.appendChild(img);
     let cardTitle = document.createElement('h2');
     cardTitle.innerHTML = title;
     cardTitle.classList.add("card-title");
-    card.appendChild(img);
     card.appendChild(cardTitle);
+    if (!displayTitle) {
+        cardTitle.setAttribute("hidden", "hidden");
+    }
     return card;
 }
 
@@ -152,7 +155,7 @@ learningCards.addEventListener("click", function (e) {
         return;
     }
 
-    window.speechSynthesis.cancel();
+    if(window.speechSynthesis.speaking) window.speechSynthesis.cancel();
     speak(node.lastElementChild.innerHTML);
 
     node.classList.add("clicked")
@@ -166,7 +169,7 @@ learningCards.addEventListener("click", function (e) {
 themeSelector.onchange = function () {
     shuffleList(dict);
     cards = dict.filter(card => card['theme'] === themeSelector.value).slice(0, nbCards);
-    loadCards(learningCards, language);
+    loadCards(learningCards, language, true);
     learn.querySelector("#learning-playzone").removeAttribute("hidden");
 }
 
@@ -179,7 +182,7 @@ document.getElementById("training-button").onclick = function () {
     learn.setAttribute("hidden", "hidden");
     train.removeAttribute("hidden");
     shuffleList(cards);
-    loadCards(trainingCards, language);
+    loadCards(trainingCards, language, false);
 
     for(let i = 0; i < cards.length ; i++){
         cardList.push({
@@ -199,7 +202,7 @@ micro.onclick = function () {
     speak(question['texte']);
 }
 
-let nbEssaies = 1;
+let nbEssais = 1;
 trainingCards.addEventListener("click", function (e) {
     let node;
     if(e.target.parentNode.classList.contains("card")){
@@ -227,7 +230,7 @@ trainingCards.addEventListener("click", function (e) {
 
         shuffleList(cardList);
         question = cardList.pop();
-        nbEssaies = 1;
+        nbEssais = 1;
         score++;
         if(question){
             speak(question['texte']);
@@ -241,13 +244,13 @@ trainingCards.addEventListener("click", function (e) {
 
         speak(vocalMsg['Faux'][language]);
 
-        if(nbEssaies > 0){
+        if(nbEssais > 0){
 
             node.classList.add("incorrect");
             setTimeout(() => {
                 node.classList.remove('incorrect');
             }, 500);
-            nbEssaies--;
+            nbEssais--;
         }else{
             node.classList.add("incorrect");
             setTimeout(() => {
@@ -255,7 +258,7 @@ trainingCards.addEventListener("click", function (e) {
             }, 500);
 
             trainingCards.children[question["indice"]].classList.add("incorrect");
-            nbEssaies = 1;
+            nbEssais = 1;
             old_answers.push(question["texte"]);
 
             shuffleList(cardList);
@@ -273,7 +276,7 @@ function gameOver(){
     window.speechSynthesis.cancel();
     document.getElementById("micro-container").hidden = true;
     document.getElementById("fin_jeu-container").hidden = false;
-    document.getElementById("fin_jeu-info").textContent = `Fin du jeu ! Votre score est de ${score}.`;
+    document.getElementById("fin_jeu-info").textContent = `Fin du jeu ! Votre score est de ${score}/9.`;
     document.getElementById("again-container").hidden = false;
 }
 
