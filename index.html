@@ -7,17 +7,21 @@
 </head>
 <body>
 
+<h1 style="text-align: center">SpeechLearn</h1>
+<h4 id="speech-available" class="speechFrame"></h4>
+<hr/>
+
+
 
 <div id="container-accueil" class="container">
 
     <!-- Message indiquant à l'utilisateur si son navigateur supporte la synthèse vocale -->
-    <h4 id="speech-available" class="speechFrame"></h4>
+
 
     <div id="config">
         <h1>Bienvenue !</h1>
-        <h3>Sur notre application, vous pourrez apprendre la prononciation des mots et retrouver les images
-            correspondantes
-            !</h3>
+        <p>Sur notre application, vous pourrez apprendre la prononciation des mots en anglais, allemand, chinois, espagnol et français.
+            <br> Votre objectif final est de pouvoir retrouver les images correspondant à un mot donné par votre assistant. <br><br> Vous êtes partant ?</p>
         <h4>Commençons par configurer votre assistant :</h4>
 
         <!-- Choix de la langue -->
@@ -37,7 +41,7 @@
         Les seules voix disponibles sont celles correspondant à la langue que veux apprendre l'utilisateur
         -->
         <div class="voice-configuration" id="voice-config" hidden>
-
+            <h3>Réglage de la voix :</h3>
             <div class="option">
                 <label for="voiceSelector">Voix</label>
                 <select name="voice" id="voiceSelector"></select>
@@ -58,8 +62,8 @@
                 <input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1">
             </div>
 
-            <button type="button" id="voiceTest"> Test</button>
-            <button type="button" id="startButton">On y va ?</button>
+            <button type="button" id="voiceTest" class="test"> Test</button>
+            <button type="button" id="startButton" class="step">On y va ?</button>
         </div>
     </div>
 
@@ -88,7 +92,7 @@
             <!--        </div>-->
         </div>
 
-        <button type="button" id="training-button">On s'entraine ?</button>
+        <button type="button" id="training-button" class="step">On s'entraine ?</button>
     </div>
 </div>
 
@@ -114,6 +118,8 @@
     <!--    <button id="again-button">Accueil</button>-->
     <img src="ressources/icon/home_icon.png" alt="home" id="home">
 </div>
+
+<footer><hr>&copy;2023 ZHANG Xin - RENARD Tanguy</footer>
 
 <script type="module" src="js/main.js"></script>
 </body>

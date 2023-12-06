@@ -6,7 +6,7 @@ let pitch = document.getElementById("pitch");
 
 //GET DOM ELEMENTS
 let speechMSG = document.getElementById("speech-available");
-let accueil = document.getElementById("container-accueil");
+let accueil = document.getElementById("config");
 let themeSelector = document.getElementById("theme-selector");
 let learn = document.getElementById("container-learning");
 let learningCards = learn.querySelector("#learn-cards");
@@ -105,6 +105,7 @@ let cards = [];
 
 document.getElementById("startButton").onclick = function () {
     accueil.setAttribute("hidden", "hidden");
+    speechMSG.setAttribute("hidden", "hidden");
     learn.removeAttribute("hidden");
 }
 

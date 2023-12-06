@@ -1,6 +1,7 @@
 body{
     margin : 25px;
     font-family: Arial, sans-serif;
+    background-color: #ddd;
 }
 
 .card {
@@ -59,7 +60,7 @@ body{
 }
 
 .speechAvailable {
-    color: green;
+    color: #46af46;
     font-weight: lighter;
 }
 
@@ -72,9 +73,19 @@ body{
     border: solid black 1px;
     border-radius: 10px;
     background-color: darkgrey;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
+    margin-top : 15px;
 }
 
+.voice-configuration label {
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+.voice-configuration input {
+    width: 300px;
+}
 .option {
     margin: 15px;
 }
@@ -123,3 +134,37 @@ body{
 #again-container img:hover{
     background-color: lightgray;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 25%;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.step {
+    background-color: #5dfc5d;
+    border-bottom: 1px solid green;
+}
+
+.step:hover {
+    background-color: #019b01;
+}
+
+.test {
+    background-color: #f6f660;
+    border-bottom: 1px solid #8c8c01;
+}
+
+.test:hover {
+    background-color: #afaf30;
+}
+
