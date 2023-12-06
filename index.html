@@ -12,7 +12,6 @@
 <hr/>
 
 
-
 <div id="container-accueil" class="container">
 
     <!-- Message indiquant à l'utilisateur si son navigateur supporte la synthèse vocale -->
@@ -20,8 +19,10 @@
 
     <div id="config">
         <h1>Bienvenue !</h1>
-        <p>Sur notre application, vous pourrez apprendre la prononciation des mots en anglais, allemand, chinois, espagnol et français.
-            <br> Votre objectif final est de pouvoir retrouver les images correspondant à un mot donné par votre assistant. <br><br> Vous êtes partant ?</p>
+        <p>Sur notre application, vous pourrez apprendre la prononciation des mots en anglais, allemand, chinois,
+            espagnol et français.
+            <br> Votre objectif final est de pouvoir retrouver les images correspondant à un mot donné par votre
+            assistant virtuel. <br><br> Vous êtes partant ?</p>
         <h4>Commençons par configurer votre assistant :</h4>
 
         <!-- Choix de la langue -->
@@ -62,8 +63,10 @@
                 <input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1">
             </div>
 
-            <button type="button" id="voiceTest" class="test"> Test</button>
-            <button type="button" id="startButton" class="step">On y va ?</button>
+            <div id="button-bar" style="margin-left: 10px">
+                <button type="button" id="voiceTest" class="test"> Test</button>
+                <button type="button" id="startButton" class="step">On y va ?</button>
+            </div>
         </div>
     </div>
 
@@ -119,7 +122,9 @@
     <img src="ressources/icon/home_icon.png" alt="home" id="home">
 </div>
 
-<footer><hr>&copy;2023 ZHANG Xin - RENARD Tanguy</footer>
+<footer>
+    <hr>&copy;2023 ZHANG Xin - RENARD Tanguy
+</footer>
 
 <script type="module" src="js/main.js"></script>
 </body>
