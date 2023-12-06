@@ -226,6 +226,8 @@ trainingCards.addEventListener("click", function (e) {
         speak(vocalMsg['Vrai'][language]);
 
         node.classList.add("correct");
+        node.lastElementChild.hidden = false;
+
         old_answers.push(answer);
 
         shuffleList(cardList);
@@ -258,6 +260,8 @@ trainingCards.addEventListener("click", function (e) {
             }, 500);
 
             trainingCards.children[question["indice"]].classList.add("incorrect");
+            trainingCards.children[question["indice"]].lastElementChild.hidden = false;
+
             nbEssais = 1;
             old_answers.push(question["texte"]);
 
