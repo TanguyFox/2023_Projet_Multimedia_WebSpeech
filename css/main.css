@@ -25,7 +25,7 @@ body{
 }
 
 .card.incorrect{
-    background-color: red;
+    background-color: #e3391a;
     cursor: auto;
 }
 
@@ -53,7 +53,7 @@ body{
 }
 
 .warningMsg {
-    color: red;
+    color: #e3391a;
     font-weight: bold;
     font-size: 25px;
 }
@@ -72,8 +72,54 @@ body{
     border: solid black 1px;
     border-radius: 10px;
     background-color: darkgrey;
+    padding: 20px;
 }
 
 .option {
-    margin: 20px;
+    margin: 15px;
+}
+
+#training-button {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+#micro-container{
+    text-align: center;
+    margin: 30px;
+}
+
+#micro-container img{
+    cursor: pointer;
+    border: black 2px dashed;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease-in-out;
+    vertical-align: middle;
+}
+
+#micro-container img:hover{
+    background-color: lightgray;
+}
+
+#micro-container img.clicked{
+    background-color: #01fdb8;
+}
+
+#again-container{
+    text-align: center;
+    margin: 30px;
+}
+
+#again-container img{
+    cursor: pointer;
+    border: black 2px dashed;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease-in-out;
+    vertical-align: middle;
+}
+
+#again-container img:hover{
+    background-color: lightgray;
 }

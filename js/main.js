@@ -200,6 +200,15 @@ document.getElementById("training-button").onclick = function () {
 micro.onclick = function () {
     window.speechSynthesis.cancel();
     speak(question['texte']);
+
+    microOn();
+}
+
+function microOn(){
+    micro.classList.add("clicked");
+    setTimeout(() => {
+        micro.classList.remove('clicked');
+    }, 500);
 }
 
 let nbEssais = 1;
@@ -224,6 +233,7 @@ trainingCards.addEventListener("click", function (e) {
         window.speechSynthesis.cancel();
 
         speak(vocalMsg['Vrai'][language]);
+        microOn();
 
         node.classList.add("correct");
         node.lastElementChild.hidden = false;
@@ -236,6 +246,7 @@ trainingCards.addEventListener("click", function (e) {
         score++;
         if(question){
             speak(question['texte']);
+            microOn();
         }else {
             gameOver();
         }
@@ -245,6 +256,7 @@ trainingCards.addEventListener("click", function (e) {
         window.speechSynthesis.cancel();
 
         speak(vocalMsg['Faux'][language]);
+        microOn();
 
         if(nbEssais > 0){
 
@@ -269,6 +281,7 @@ trainingCards.addEventListener("click", function (e) {
             question = cardList.pop();
             if(question){
                 speak(question['texte']);
+                microOn();
             }else {
                 gameOver();
             }
@@ -284,7 +297,7 @@ function gameOver(){
     document.getElementById("again-container").hidden = false;
 }
 
-document.getElementById("again-button").onclick = function (){
+document.getElementById("home").onclick = function (){
     location.reload();
 }
 
