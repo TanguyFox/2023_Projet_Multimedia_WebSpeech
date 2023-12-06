@@ -20,19 +20,25 @@ let language, datalang;
 
 let vocalMsg = {
     "Vrai" : {
-        "French": "Bonne Réponse",
-        "English": "Correct",
-        "Chinese": "正确"
+        "French": "Bonne Réponse !",
+        "English": "Correct !",
+        "Chinese": "正确",
+        "Spanish" : "Bien hecho !",
+        "German" : "Gut !"
     },
     "Faux" : {
-        "French": "Mauvaise Réponse",
-        "English": "Incorrect",
-        "Chinese": "错误"
+        "French": "Mauvaise Réponse...",
+        "English": "Incorrect...",
+        "Chinese": "错误",
+        "Spanish" : "Falso...",
+        "German" : "Falsche..."
     },
     "Greeting":{
-        "French": "Bonjour",
-        "English": "Hello",
-        "Chinese": "你好"
+        "French": "Bonjour !",
+        "English": "Hello !",
+        "Chinese": "你好",
+        "Spanish" : "Buenos dias !",
+        "German" : "Hallo !",
     }
 }
 
@@ -62,14 +68,13 @@ function checkSpeechAvailable(){
     } else {
         speechMSG.getElementById("speech-available").innerHTML = "Votre navigateur ne supporte pas la synthèse de la parole, vous ne pouvez malheureusement pas utiliser notre application";
         speechMSG.classList.add("warningMsg")
-        document.getElementById("container-accueil").setAttribute("hidden", "hidden");
+        document.getElementById("config").setAttribute("hidden", "hidden");
         return false
     }
 }
 
 function loadVoices(lang) {
     let voices = window.speechSynthesis.getVoices().filter(voice => voice.lang === lang);
-    console.log(voices);
     voices.forEach(voice => {
         let option = document.createElement("option");
         option.value = voice.name;

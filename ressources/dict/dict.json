@@ -7,7 +7,9 @@
             "language": {
                 "English" : "Alarm clock",
                 "French":"Réveil",
-                "Chinese": "闹钟"
+                "Chinese": "闹钟",
+                "Spanish" : "Despertador",
+                "German" : "Wecker"
             }
         },
         {
@@ -17,7 +19,9 @@
             "language": {
                 "English" : "Anteater",
                 "French":"Fourmilier",
-                "Chinese": "食蚁兽"
+                "Chinese": "食蚁兽",
+                "Spanish" : "Oso hormiguero",
+                "German" : "Ameisenbär"
             }
         },
         {
@@ -27,7 +31,9 @@
             "language": {
                 "English" : "Apple",
                 "French":"Pomme",
-                "Chinese": "苹果"
+                "Chinese": "苹果",
+                "Spanish" : "Manzana",
+                "German" : "Apfel"
             }
         },
         {
@@ -37,7 +43,9 @@
             "language": {
                 "English" : "Apricot",
                 "French":"Abricot",
-                "Chinese": "杏子"
+                "Chinese": "杏子",
+                "Spanish" : "Albaricoque",
+                "German" : "Aprikose"
             }
         },
         {
@@ -47,7 +55,9 @@
             "language": {
                 "English" : "Avocado",
                 "French":"Avocat",
-                "Chinese": "牛油果"
+                "Chinese": "牛油果",
+                "Spanish" : "Aguacate",
+                "German" : "Avocado"
             }
         },
         {
@@ -57,7 +67,9 @@
             "language": {
                 "English" : "Banana",
                 "French":"Banane",
-                "Chinese": "香蕉"
+                "Chinese": "香蕉",
+                "Spanish" : "Plátano",
+                "German" : "Banane"
             }
         },
         {
@@ -67,7 +79,9 @@
             "language": {
                 "English" : "Bear",
                 "French":"Ours",
-                "Chinese": "熊"
+                "Chinese": "熊",
+                "Spanish" : "Oso",
+                "German" : "Bär"
             }
         },
         {
@@ -77,7 +91,9 @@
             "language": {
                 "English" : "Belt",
                 "French":"Ceinture",
-                "Chinese": "腰带"
+                "Chinese": "腰带",
+                "Spanish" : "Correa",
+                "German" : "Gürtel"
             }
         },
         {
@@ -86,8 +102,10 @@
             "theme" : "objects",
             "language": {
                 "English" : "Bucket",
-                "French":"Sceau",
-                "Chinese": "桶"
+                "French":"Seau",
+                "Chinese": "桶",
+                "Spanish" : "Cubo",
+                "German" : "Eimer"
             }
         },
         {
@@ -97,7 +115,9 @@
             "language": {
                 "English" : "Candle",
                 "French":"Bougie",
-                "Chinese": "蜡烛"
+                "Chinese": "蜡烛",
+                "Spanish" : "Candela",
+                "German" : "Kerze"
             }
         },
         {
@@ -107,7 +127,9 @@
             "language": {
                 "English" : "Carrot",
                 "French":"Carotte",
-                "Chinese": "胡萝卜"
+                "Chinese": "胡萝卜",
+                "Spanish" : "Zanahoria",
+                "German" : "Karotte"
             }
         },
         {
@@ -117,7 +139,9 @@
             "language": {
                 "English" : "Cat",
                 "French":"Chat",
-                "Chinese": "猫"
+                "Chinese": "猫",
+                "Spanish" : "Gato",
+                "German" : "Katze"
             }
         },
         {
@@ -127,7 +151,9 @@
             "language": {
                 "English" : "Chameleon",
                 "French":"Caméléon",
-                "Chinese": "变色龙"
+                "Chinese": "变色龙",
+                "Spanish" : "Camaleón",
+                "German" : "Chamäleon"
             }
         },
         {
@@ -137,7 +163,9 @@
             "language": {
                 "English" : "Cherry",
                 "French":"Cerise",
-                "Chinese": "樱桃"
+                "Chinese": "樱桃",
+                "Spanish" : "Cereza",
+                "German" : "Kirsche"
             }
         },
         {
@@ -147,7 +175,9 @@
             "language": {
                 "English" : "Chicken",
                 "French":"Poulet",
-                "Chinese": "鸡"
+                "Chinese": "鸡",
+                "Spanish" : "Pollo",
+                "German" : "Huhn"
             }
         },
         {
@@ -157,7 +187,9 @@
             "language": {
                 "English" : "Clementine",
                 "French":"Clémentine",
-                "Chinese": "柑橘"
+                "Chinese": "柑橘",
+                "Spanish" : "Clementina",
+                "German" : "Klementine"
             }
         },
         {
@@ -167,7 +199,9 @@
             "language": {
                 "English" : "Coconut",
                 "French":"Noix de coco",
-                "Chinese": "椰子"
+                "Chinese": "椰子",
+                "Spanish" : "Coco",
+                "German" : "Kokosnuss"
             }
         },
         {
@@ -177,7 +211,9 @@
             "language": {
                 "English" : "Corn",
                 "French":"Maïs",
-                "Chinese": "玉米"
+                "Chinese": "玉米",
+                "Spanish" : "Maíz",
+                "German" : "Mais"
             }
         },
         {
@@ -187,7 +223,9 @@
             "language": {
                 "English" : "Cow",
                 "French":"Vache",
-                "Chinese": "奶牛"
+                "Chinese": "奶牛",
+                "Spanish" : "Vaca",
+                "German" : "Kuh"
             }
         },
         {
@@ -197,7 +235,9 @@
             "language": {
                 "English" : "Crab",
                 "French":"Crabe",
-                "Chinese": "螃蟹"
+                "Chinese": "螃蟹",
+                "Spanish" : "Cangrejo",
+                "German" : "Krabbe"
             }
         },
         {
@@ -207,7 +247,9 @@
             "language": {
                 "English" : "Crocodile",
                 "French":"Crocodile",
-                "Chinese": "鳄鱼"
+                "Chinese": "鳄鱼",
+                "Spanish" : "Cocodrilo",
+                "German" : "Krokodil"
             }
         },
         {
@@ -217,7 +259,9 @@
             "language": {
                 "English" : "Cup",
                 "French":"Tasse",
-                "Chinese": "杯子"
+                "Chinese": "杯子",
+                "Spanish" : "Taza",
+                "German" : "Tasse"
             }
         },
         {
@@ -227,7 +271,9 @@
             "language": {
                 "English" : "Deer",
                 "French":"Cerf",
-                "Chinese": "鹿"
+                "Chinese": "鹿",
+                "Spanish" : "Ciervo",
+                "German" : "Hirsh"
             }
         },
         {
@@ -237,7 +283,9 @@
             "language": {
                 "English" : "Dice",
                 "French":"Dé",
-                "Chinese": "骰子"
+                "Chinese": "骰子",
+                "Spanish" : "Dado",
+                "German" : "Spielwürfel"
             }
         },
         {
@@ -247,7 +295,9 @@
             "language": {
                 "English" : "Dog",
                 "French":"Chien",
-                "Chinese": "狗"
+                "Chinese": "狗",
+                "Spanish" : "Perro",
+                "German" : "Hund"
             }
         },
         {
@@ -257,7 +307,9 @@
             "language": {
                 "English" : "Dolphin",
                 "French":"Dauphin",
-                "Chinese": "海豚"
+                "Chinese": "海豚",
+                "Spanish" : "Delfín",
+                "German" : "Delfin"
             }
         },
         {
@@ -267,7 +319,9 @@
             "language": {
                 "English" : "Donkey",
                 "French":"Âne",
-                "Chinese": "驴子"
+                "Chinese": "驴子",
+                "Spanish" : "Asno",
+                "German" : "Esel"
             }
         },
         {
@@ -277,7 +331,9 @@
             "language": {
                 "English" : "Duck",
                 "French":"Canard",
-                "Chinese": "鸭子"
+                "Chinese": "鸭子",
+                "Spanish" : "Pato",
+                "German" : "Ente"
             }
         },
         {
@@ -287,7 +343,9 @@
             "language": {
                 "English" : "Eagle",
                 "French":"Aigle",
-                "Chinese": "鹰"
+                "Chinese": "鹰",
+                "Spanish" : "águila",
+                "German" : "Adler"
             }
         },
         {
@@ -297,7 +355,9 @@
             "language": {
                 "English" : "Eggplant",
                 "French":"Aubergine",
-                "Chinese": "茄子"
+                "Chinese": "茄子",
+                "Spanish" : "Berenjena",
+                "German" : "Aubergine"
             }
         },
         {
@@ -307,7 +367,9 @@
             "language": {
                 "English" : "Elephant",
                 "French":"Éléphant",
-                "Chinese": "大象"
+                "Chinese": "大象",
+                "Spanish" : "Elefante",
+                "German" : "Elefant"
             }
         },
         {
@@ -317,7 +379,9 @@
             "language": {
                 "English" : "Fig",
                 "French":"Figue",
-                "Chinese": "无花果"
+                "Chinese": "无花果",
+                "Spanish" : "Higo",
+                "German" : "Feige"
             }
         },
         {
@@ -327,7 +391,9 @@
             "language": {
                 "English" : "Fish",
                 "French":"Poisson",
-                "Chinese": "鱼"
+                "Chinese": "鱼",
+                "Spanish" : "Pez",
+                "German" : "Fisch"
             }
         },
         {
@@ -337,7 +403,9 @@
             "language": {
                 "English" : "Fork",
                 "French":"Fourchette",
-                "Chinese": "叉子"
+                "Chinese": "叉子",
+                "Spanish" : "Tenedor",
+                "German" : "Gabel"
             }
         },
         {
@@ -347,7 +415,9 @@
             "language": {
                 "English" : "Fox",
                 "French":"Renard",
-                "Chinese": "狐狸"
+                "Chinese": "狐狸",
+                "Spanish" : "Zorro",
+                "German" : "Fuchs"
             }
         },
         {
@@ -357,7 +427,9 @@
             "language": {
                 "English" : "Frog",
                 "French":"Grenouille",
-                "Chinese": "青蛙"
+                "Chinese": "青蛙",
+                "Spanish" : "Rana",
+                "German" : "Frosch"
             }
         },
         {
@@ -367,7 +439,9 @@
             "language": {
                 "English" : "Garlic",
                 "French":"Ail",
-                "Chinese": "蒜"
+                "Chinese": "蒜",
+                "Spanish" : "Ajo",
+                "German" : "Knoblauch"
             }
         },
         {
@@ -377,7 +451,9 @@
             "language": {
                 "English" : "Ginger",
                 "French":"Gingembre",
-                "Chinese": "姜"
+                "Chinese": "姜",
+                "Spanish" : "Jengibre",
+                "German" : "Ingwer"
             }
         },
         {
@@ -387,7 +463,9 @@
             "language": {
                 "English" : "Giraffe",
                 "French":"Girafe",
-                "Chinese": "长颈鹿"
+                "Chinese": "长颈鹿",
+                "Spanish" : "Jirafa",
+                "German" : "Giraffe"
             }
         },
         {
@@ -397,7 +475,9 @@
             "language": {
                 "English" : "Glasses",
                 "French":"Lunettes",
-                "Chinese": "眼镜"
+                "Chinese": "眼镜",
+                "Spanish" : "Gafas",
+                "German" : "Brille"
             }
         },
         {
@@ -406,8 +486,10 @@
             "theme" : "animals",
             "language": {
                 "English" : "Goat",
-                "French":"Bouc",
-                "Chinese": "山羊"
+                "French":"Chèvre",
+                "Chinese": "山羊",
+                "Spanish" : "Cabra",
+                "German" : "Ziege"
             }
         },
         {
@@ -417,7 +499,9 @@
             "language": {
                 "English" : "Gorilla",
                 "French":"Gorille",
-                "Chinese": "大猩猩"
+                "Chinese": "大猩猩",
+                "Spanish" : "Gorila",
+                "German" : "Gorilla"
             }
         },
         {
@@ -427,7 +511,9 @@
             "language": {
                 "English" : "Grape",
                 "French":"Raisin",
-                "Chinese": "葡萄"
+                "Chinese": "葡萄",
+                "Spanish" : "Uva",
+                "German" : "Traube"
             }
         },
         {
@@ -437,7 +523,9 @@
             "language": {
                 "English" : "Hedgehog",
                 "French":"Hérisson",
-                "Chinese": "刺猬"
+                "Chinese": "刺猬",
+                "Spanish" : "Erizo",
+                "German" : "Igel"
             }
         },
         {
@@ -445,9 +533,11 @@
             "path": "ressources/carte/animals/Hippo.png",
             "theme" : "animals",
             "language": {
-                "English" : "Hippo",
+                "English" : "Hippopotamus",
                 "French":"Hippopotame",
-                "Chinese": "河马"
+                "Chinese": "河马",
+                "Spanish" : "Hipopótamo",
+                "German" : "Nilpferd"
             }
         },
         {
@@ -457,7 +547,9 @@
             "language": {
                 "English" : "Horse",
                 "French":"Cheval",
-                "Chinese": "马"
+                "Chinese": "马",
+                "Spanish" : "Caballo",
+                "German" : "Pferd"
             }
         },
         {
@@ -467,7 +559,9 @@
             "language": {
                 "English" : "Horseradish",
                 "French":"Raifort",
-                "Chinese": "辣根"
+                "Chinese": "辣根",
+                "Spanish" : "Rábano",
+                "German" : "Meerrettichbaum"
             }
         },
         {
@@ -477,7 +571,9 @@
             "language": {
                 "English" : "Jellyfish",
                 "French":"Méduse",
-                "Chinese": "水母"
+                "Chinese": "水母",
+                "Spanish" : "Medusa",
+                "German" : "Qualle"
             }
         },
         {
@@ -487,7 +583,9 @@
             "language": {
                 "English" : "Kangaroo",
                 "French":"Kangourou",
-                "Chinese": "袋鼠"
+                "Chinese": "袋鼠",
+                "Spanish" : "Canguro",
+                "German" : "Känguru"
             }
         },
         {
@@ -497,7 +595,9 @@
             "language": {
                 "English" : "Key",
                 "French":"Clé",
-                "Chinese": "钥匙"
+                "Chinese": "钥匙",
+                "Spanish" : "Llave",
+                "German" : "Schlüssel"
             }
         },
         {
@@ -506,8 +606,10 @@
             "theme" : "plants",
             "language": {
                 "English" : "Kiwi",
-                "French":"kiwi",
-                "Chinese": "猕猴桃"
+                "French":"Kiwi",
+                "Chinese": "猕猴桃",
+                "Spanish" : "Kiwi",
+                "German" : "Kiwi"
             }
         },
         {
@@ -517,7 +619,9 @@
             "language": {
                 "English" : "Koala",
                 "French":"Koala",
-                "Chinese": "考拉"
+                "Chinese": "考拉",
+                "Spanish" : "Koala",
+                "German" : "Koala"
             }
         },
         {
@@ -527,7 +631,9 @@
             "language": {
                 "English" : "Leek",
                 "French":"Poireau",
-                "Chinese": "韭菜"
+                "Chinese": "韭菜",
+                "Spanish" : "Puerro",
+                "German" : "Lauch"
             }
         },
         {
@@ -537,7 +643,9 @@
             "language": {
                 "English" : "Lemon",
                 "French":"Citron",
-                "Chinese": "柠檬"
+                "Chinese": "柠檬",
+                "Spanish" : "Limón",
+                "German" : "Zitrone"
             }
         },
         {
@@ -547,7 +655,9 @@
             "language": {
                 "English" : "Lentils",
                 "French":"Lentilles",
-                "Chinese": "扁豆"
+                "Chinese": "扁豆",
+                "Spanish" : "Lenteja",
+                "German" : "Linse"
             }
         },
         {
@@ -557,7 +667,9 @@
             "language": {
                 "English" : "Lion",
                 "French":"Lion",
-                "Chinese": "狮子"
+                "Chinese": "狮子",
+                "Spanish" : "León",
+                "German" : "Löwe"
             }
         },
         {
@@ -567,7 +679,9 @@
             "language": {
                 "English" : "Mint",
                 "French":"Menthe",
-                "Chinese": "薄荷"
+                "Chinese": "薄荷",
+                "Spanish" : "Menta",
+                "German" : "Minze"
             }
         },
         {
@@ -577,7 +691,9 @@
             "language": {
                 "English" : "Mole",
                 "French":"Taupe",
-                "Chinese": "鼹鼠"
+                "Chinese": "鼹鼠",
+                "Spanish" : "Topo",
+                "German" : "Maulwurf"
             }
         },
         {
@@ -587,7 +703,9 @@
             "language": {
                 "English" : "Monkey",
                 "French":"Singe",
-                "Chinese": "猴子"
+                "Chinese": "猴子",
+                "Spanish" : "Simio",
+                "German" : "Affe"
             }
         },
         {
@@ -597,7 +715,9 @@
             "language": {
                 "English" : "Mouse",
                 "French":"Souris",
-                "Chinese": "老鼠"
+                "Chinese": "老鼠",
+                "Spanish" : "Ratón",
+                "German" : "Maus"
             }
         },
         {
@@ -607,7 +727,9 @@
             "language": {
                 "English" : "Mushroom",
                 "French":"Champignon",
-                "Chinese": "蘑菇"
+                "Chinese": "蘑菇",
+                "Spanish" : "Hongo",
+                "German" : "Pilz"
             }
         },
         {
@@ -617,7 +739,9 @@
             "language": {
                 "English" : "Octopus",
                 "French":"Pieuvre",
-                "Chinese": "章鱼"
+                "Chinese": "章鱼",
+                "Spanish" : "Pulpo",
+                "German" : "Titenfisch"
             }
         },
         {
@@ -627,7 +751,9 @@
             "language": {
                 "English" : "Onion",
                 "French":"Oignon",
-                "Chinese": "洋葱"
+                "Chinese": "洋葱",
+                "Spanish" : "Cebolla",
+                "German" : "Zwiebel"
             }
         },
         {
@@ -637,7 +763,9 @@
             "language": {
                 "English" : "Owl",
                 "French":"Hibou",
-                "Chinese": "猫头鹰"
+                "Chinese": "猫头鹰",
+                "Spanish" : "Búho",
+                "German" : "Eule"
             }
         },
         {
@@ -647,7 +775,9 @@
             "language": {
                 "English" : "Panda",
                 "French":"Panda",
-                "Chinese": "熊猫"
+                "Chinese": "熊猫",
+                "Spanish" : "Panda",
+                "German" : "Panda"
             }
         },
         {
@@ -657,7 +787,9 @@
             "language": {
                 "English" : "Parrot",
                 "French":"Perroquet",
-                "Chinese": "鹦鹉"
+                "Chinese": "鹦鹉",
+                "Spanish" : "Loro",
+                "German" : "Papagei"
             }
         },
         {
@@ -667,7 +799,9 @@
             "language": {
                 "English" : "Parsnip",
                 "French":"Panais",
-                "Chinese": "欧防风"
+                "Chinese": "欧防风",
+                "Spanish" : "Chivía",
+                "German" : "Pastinak"
             }
         },
         {
@@ -677,7 +811,9 @@
             "language": {
                 "English" : "Peach",
                 "French":"Pêche",
-                "Chinese": "桃子"
+                "Chinese": "桃子",
+                "Spanish" : "Melocotón",
+                "German" : "Pfirsich"
             }
         },
         {
@@ -687,7 +823,9 @@
             "language": {
                 "English" : "Pear",
                 "French":"Poire",
-                "Chinese": "梨"
+                "Chinese": "梨",
+                "Spanish" : "Pera",
+                "German" : "Birne"
             }
         },
         {
@@ -697,7 +835,9 @@
             "language": {
                 "English" : "Peas",
                 "French":"Petits pois",
-                "Chinese": "豌豆"
+                "Chinese": "豌豆",
+                "Spanish" : "Guisantes",
+                "German" : "Erbsen"
             }
         },
         {
@@ -706,8 +846,10 @@
             "theme" : "animals",
             "language": {
                 "English" : "Pig",
-                "French":"Porc",
-                "Chinese": "猪"
+                "French":"Cochon",
+                "Chinese": "猪",
+                "Spanish" : "Cerdo",
+                "German" : "Schwein"
             }
         },
         {
@@ -717,7 +859,9 @@
             "language": {
                 "English" : "Pigeon",
                 "French":"Pigeon",
-                "Chinese": "鸽子"
+                "Chinese": "鸽子",
+                "Spanish" : "Paloma",
+                "German" : "Taube"
             }
         },
         {
@@ -727,7 +871,9 @@
             "language": {
                 "English" : "Pillow",
                 "French":"Oreiller",
-                "Chinese": "枕头"
+                "Chinese": "枕头",
+                "Spanish" : "Almohada",
+                "German" : "Kissen"
             }
         },
         {
@@ -737,7 +883,9 @@
             "language": {
                 "English" : "Polar bear",
                 "French":"Ours polaire",
-                "Chinese": "北极熊"
+                "Chinese": "北极熊",
+                "Spanish" : "Oso polar",
+                "German" : "Eisbär"
             }
         },
         {
@@ -747,7 +895,9 @@
             "language": {
                 "English" : "Potato",
                 "French":"Pomme de terre",
-                "Chinese": "土豆"
+                "Chinese": "土豆",
+                "Spanish" : "Patata",
+                "German" : "Kartoffel"
             }
         },
         {
@@ -757,7 +907,9 @@
             "language": {
                 "English" : "Rabbit",
                 "French":"Lapin",
-                "Chinese": "兔子"
+                "Chinese": "兔子",
+                "Spanish" : "Conejos",
+                "German" : "Hase"
             }
         },
         {
@@ -767,7 +919,9 @@
             "language": {
                 "English" : "Raccoon",
                 "French":"Raton laveur",
-                "Chinese": "浣熊"
+                "Chinese": "浣熊",
+                "Spanish" : "Mapache",
+                "German" : "Washbär"
             }
         },
         {
@@ -777,7 +931,9 @@
             "language": {
                 "English" : "Radish",
                 "French":"Radis",
-                "Chinese": "萝卜"
+                "Chinese": "萝卜",
+                "Spanish" : "Rábano",
+                "German" : "Radieschen"
             }
         },
         {
@@ -785,9 +941,11 @@
             "path": "ressources/carte/animals/Rhino.png",
             "theme" : "animals",
             "language": {
-                "English" : "Rhino",
+                "English" : "Rhinoceros",
                 "French":"Rhinocéros",
-                "Chinese": "犀牛"
+                "Chinese": "犀牛",
+                "Spanish" : "rinoceronte",
+                "German" : "Nashorn"
             }
         },
         {
@@ -797,7 +955,9 @@
             "language": {
                 "English" : "Rutabaga",
                 "French":"Rutabaga",
-                "Chinese": "芜菁甘蓝"
+                "Chinese": "芜菁甘蓝",
+                "Spanish" : "Colinabo",
+                "German" : "Kohlrübe"
             }
         },
         {
@@ -807,7 +967,9 @@
             "language": {
                 "English" : "Scissors",
                 "French":"Ciseaux",
-                "Chinese": "剪刀"
+                "Chinese": "剪刀",
+                "Spanish" : "Tijeras",
+                "German" : "Schere"
             }
         },
         {
@@ -817,7 +979,9 @@
             "language": {
                 "English" : "Shark",
                 "French":"Requin",
-                "Chinese": "鲨鱼"
+                "Chinese": "鲨鱼",
+                "Spanish" : "Tiburón",
+                "German" : "Hai"
             }
         },
         {
@@ -827,7 +991,9 @@
             "language": {
                 "English" : "Sheep",
                 "French":"Mouton",
-                "Chinese": "绵羊"
+                "Chinese": "绵羊",
+                "Spanish" : "Oveja",
+                "German" : "Schafe"
             }
         },
         {
@@ -837,7 +1003,9 @@
             "language": {
                 "English" : "Skunk",
                 "French":"Moufette",
-                "Chinese": "臭鼬"
+                "Chinese": "臭鼬",
+                "Spanish" : "Mofeta",
+                "German" : "Stinktier"
             }
         },
         {
@@ -847,7 +1015,9 @@
             "language": {
                 "English" : "Cell phone",
                 "French":"Portable",
-                "Chinese": "手机"
+                "Chinese": "手机",
+                "Spanish" : "Móvil",
+                "German" : "Handy"
             }
         },
         {
@@ -857,7 +1027,9 @@
             "language": {
                 "English" : "Snake",
                 "French":"Serpent",
-                "Chinese": "蛇"
+                "Chinese": "蛇",
+                "Spanish" : "Serpiente",
+                "German" : "Schlange"
             }
         },
         {
@@ -867,7 +1039,9 @@
             "language": {
                 "English" : "Spoon",
                 "French":"Cuillère",
-                "Chinese": "勺子"
+                "Chinese": "勺子",
+                "Spanish" : "Cuchara",
+                "German" : "Löffel"
             }
         },
         {
@@ -877,7 +1051,9 @@
             "language": {
                 "English" : "Squirrel",
                 "French":"Écureuil",
-                "Chinese": "松鼠"
+                "Chinese": "松鼠",
+                "Spanish" : "Ardilla",
+                "German" : "Eichhörnchen"
             }
         },
         {
@@ -887,7 +1063,9 @@
             "language": {
                 "English" : "Swan",
                 "French":"Cygne",
-                "Chinese": "天鹅"
+                "Chinese": "天鹅",
+                "Spanish" : "Cisne",
+                "German" : "Schwan"
             }
         },
         {
@@ -897,7 +1075,9 @@
             "language": {
                 "English" : "Taro",
                 "French":"Taro",
-                "Chinese": "芋头"
+                "Chinese": "芋头",
+                "Spanish" : "Taro",
+                "German" : "Wasserbrotwurzel"
             }
         },
         {
@@ -907,7 +1087,9 @@
             "language": {
                 "English" : "Tiger",
                 "French":"Tigre",
-                "Chinese": "老虎"
+                "Chinese": "老虎",
+                "Spanish" : "Tigre",
+                "German" : "Tiger"
             }
         },
         {
@@ -917,7 +1099,9 @@
             "language": {
                 "English" : "Tomato",
                 "French":"Tomate",
-                "Chinese": "西红柿"
+                "Chinese": "西红柿",
+                "Spanish" : "Tomate",
+                "German" : "Tomate"
             }
         },
         {
@@ -927,7 +1111,9 @@
             "language": {
                 "English" : "Turnip",
                 "French":"Navet",
-                "Chinese": "芜菁"
+                "Chinese": "芜菁",
+                "Spanish" : "Nabo",
+                "German" : "Steckrübe"
             }
         },
         {
@@ -937,7 +1123,9 @@
             "language": {
                 "English" : "Turtle",
                 "French":"Tortue",
-                "Chinese": "乌龟"
+                "Chinese": "乌龟",
+                "Spanish" : "Tortuga",
+                "German" : "Schildkröte"
             }
         },
         {
@@ -947,7 +1135,9 @@
             "language": {
                 "English" : "Umbrella",
                 "French":"Parapluie",
-                "Chinese": "雨伞"
+                "Chinese": "雨伞",
+                "Spanish" : "Paraguas",
+                "German" : "Regenschirm"
             }
         },
         {
@@ -957,7 +1147,9 @@
             "language": {
                 "English" : "Watermelon",
                 "French":"Pastèque",
-                "Chinese": "西瓜"
+                "Chinese": "西瓜",
+                "Spanish" : "Sandia",
+                "German" : "Wassermelone"
             }
         },
         {
@@ -967,7 +1159,9 @@
             "language": {
                 "English" : "Whale",
                 "French":"Baleine",
-                "Chinese": "鲸鱼"
+                "Chinese": "鲸鱼",
+                "Spanish" : "Ballena",
+                "German" : "Wal"
             }
         },
         {
@@ -977,7 +1171,9 @@
             "language": {
                 "English" : "Yak",
                 "French":"Yak",
-                "Chinese": "耗牛"
+                "Chinese": "耗牛",
+                "Spanish" : "Yak",
+                "German" : "Yak"
             }
         },
         {
@@ -987,7 +1183,9 @@
             "language": {
                 "English" : "Yam",
                 "French":"Igname",
-                "Chinese": "山药"
+                "Chinese": "山药",
+                "Spanish" : "ñame",
+                "German" : "Yamswurzel"
             }
         },
         {
@@ -997,7 +1195,9 @@
             "language": {
                 "English" : "Zebra",
                 "French":"Zèbre",
-                "Chinese": "斑马"
+                "Chinese": "斑马",
+                "Spanish" : "Cebra",
+                "German" : "Zebra"
             }
         }
     ]
