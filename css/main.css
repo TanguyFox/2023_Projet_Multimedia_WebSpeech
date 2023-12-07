@@ -13,7 +13,7 @@ body{
 }
 
 .card:hover {
-    background-color: lightgray;
+    background-color: #7c7a7a;
 }
 
 .card.clicked {
@@ -110,7 +110,7 @@ body{
 }
 
 #micro-container img:hover{
-    background-color: lightgray;
+    background-color: #7c7a7a;
 }
 
 #micro-container img.clicked{
@@ -132,7 +132,7 @@ body{
 }
 
 #again-container img:hover{
-    background-color: lightgray;
+    background-color: #7c7a7a;
 }
 
 .container {
