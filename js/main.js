@@ -18,32 +18,12 @@ let micro = document.getElementById("micro");
 //LANGUAGE ATTRIBUTES
 let language, datalang;
 
-let vocalMsg = {
-    "Vrai" : {
-        "French": "Bonne Réponse !",
-        "English": "Correct !",
-        "Chinese": "正确",
-        "Spanish" : "Bien hecho !",
-        "German" : "Gut !"
-    },
-    "Faux" : {
-        "French": "Mauvaise Réponse...",
-        "English": "Incorrect...",
-        "Chinese": "错误",
-        "Spanish" : "Falso...",
-        "German" : "Falsche..."
-    },
-    "Greeting":{
-        "French": "Bonjour !",
-        "English": "Hello !",
-        "Chinese": "你好",
-        "Spanish" : "Buenos dias !",
-        "German" : "Hallo !",
-    }
-}
+
 
 //READ Dict
 let dict = [];
+
+//GET CARD DATA
 fetch("ressources/dict/dict.json")
     .then(response => response.json())
     .then(json => {
@@ -52,6 +32,9 @@ fetch("ressources/dict/dict.json")
     })
     .catch(err => console.log(err));
 
+
+// ALL FUNCTIONS USED IN THE PROJECT
+
 function shuffleList(list) {
     for (let i = list.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -59,6 +42,9 @@ function shuffleList(list) {
     }
 }
 
+//Function that check if SpeechSynthesis is supported by the user's browser
+//If it is, the app display the starting menu and load voices
+//Else, nothing is displayed except the error message
 function checkSpeechAvailable(){
     if('speechSynthesis' in window) {
         speechMSG.innerHTML = "Votre navigateur supporte la synthèse de la parole"
@@ -73,6 +59,8 @@ function checkSpeechAvailable(){
     }
 }
 
+//LOAD ALL VOICES THAT MATCHES THE LANGUAGE SELECTED BY THE USER
+//IT THEN CAN BE SET BY THE USER
 function loadVoices(lang) {
     let voices = window.speechSynthesis.getVoices().filter(voice => voice.lang === lang);
     voices.forEach(voice => {
@@ -98,35 +86,36 @@ function speak(text) {
     window.speechSynthesis.speak(msg);
 }
 
-window.onload = checkSpeechAvailable
+//ARRAY WITH GREETINGS MESSAGE IN THE DIFFERENT LANGUAGES AVAILABLE ON THE APP
+let welcomingMsg = {
+    "Vrai" : {
+        "French": "Bonne Réponse !",
+        "English": "Correct !",
+        "Chinese": "正确",
+        "Spanish" : "Bien hecho !",
+        "German" : "Gut !"
+    },
+    "Faux" : {
+        "French": "Mauvaise Réponse...",
+        "English": "Incorrect...",
+        "Chinese": "错误",
+        "Spanish" : "Falso...",
+        "German" : "Falsche..."
+    },
+    "Greeting":{
+        "French": "Bonjour !",
+        "English": "Hello !",
+        "Chinese": "你好",
+        "Spanish" : "Buenos dias !",
+        "German" : "Hallo !",
+    }
+}
 
 let nbCards = 9;
 let cards = [];
 
-document.getElementById("startButton").onclick = function () {
-    accueil.setAttribute("hidden", "hidden");
-    speechMSG.setAttribute("hidden", "hidden");
-    learn.removeAttribute("hidden");
-}
-
-document.getElementById("training-button").onclick = function () {
-    learn.setAttribute("hidden", "hidden");
-    train.removeAttribute("hidden");
-}
-
-document.getElementById("voiceTest").onclick = function () {
-    speak(vocalMsg['Greeting'][language]);
-}
-
-languageSelector.onchange = function () {
-    voiceSelector.innerHTML = "";
-    let index = this.selectedIndex
-    language = this.value;
-    datalang = this.options[index].dataset.lang
-    loadVoices(datalang);
-    document.getElementById("voice-config").removeAttribute("hidden");
-}
-
+//FUNCTION THAT CREATE CARDS FROM THE CARD DATA DEPENDING ON THE LANGUAGE SELECTED
+//AND ADD THEM TO THE CARD GRID
 function loadCards(node, lang, displayTitle){
     node.innerHTML = "";
     for (let i = 0; i < nbCards; i++) {
@@ -135,6 +124,7 @@ function loadCards(node, lang, displayTitle){
     }
 }
 
+//CREATE A CARD FROM THE DATA GIVEN THE TITLE, IMG PATH, AND IF THE TITLE MUST BE DISPLAYED OR NOT
 function createCard(title, imgPath, displayTitle){
     let card = document.createElement('div');
     card.classList.add("card");
@@ -151,6 +141,75 @@ function createCard(title, imgPath, displayTitle){
     return card;
 }
 
+
+
+function microOn(){
+    micro.classList.add("clicked");
+    setTimeout(() => {
+        micro.classList.remove('clicked');
+    }, 500);
+}
+
+let question;
+let score = 0;
+let cardList = [];
+let old_answers = [];
+
+let nbEssais = 1;
+
+
+//END OF THE GAME
+function gameOver(){
+    window.speechSynthesis.cancel();
+    document.getElementById("micro-container").hidden = true;
+    document.getElementById("fin_jeu-container").hidden = false;
+    document.getElementById("fin_jeu-info").textContent = `Fin du jeu ! Votre score est de ${score}/9.`;
+    document.getElementById("again-container").hidden = false;
+}
+
+
+//EVENT LISTENERS
+
+//GO BACK TO HOME PAGE WHEN CLICK ON THE APP TITLE
+document.getElementById("home").onclick = function (){
+    location.reload();
+}
+
+
+//START LEARNING SESSION
+//HIDE HOME PAGE
+//DISPLAY LEARNING PAGE
+document.getElementById("startButton").onclick = function () {
+    accueil.setAttribute("hidden", "hidden");
+    speechMSG.setAttribute("hidden", "hidden");
+    learn.removeAttribute("hidden");
+}
+
+//START TRAINING SESSION
+//HIDE LEARNING PAGE
+//DISPLAY TRAINING PAGE
+document.getElementById("training-button").onclick = function () {
+    learn.setAttribute("hidden", "hidden");
+    train.removeAttribute("hidden");
+}
+
+document.getElementById("voiceTest").onclick = function () {
+    speak(welcomingMsg['Greeting'][language]);
+}
+
+//WHEN A LANGUAGE IS SELECTED? ASSOCIATED VOICES ARE LOADED
+//THEN DISPLAYED IN THE VOICE SETTING ZONE
+languageSelector.onchange = function () {
+    voiceSelector.innerHTML = "";
+    let index = this.selectedIndex
+    language = this.value;
+    datalang = this.options[index].dataset.lang
+    loadVoices(datalang);
+    document.getElementById("voice-config").removeAttribute("hidden");
+}
+
+//WHEN CLICK ON CARD IN THE LEARNING ZONE
+//THE VOCAL ASSITANT TELLS THE CARD NAME
 learningCards.addEventListener("click", function (e) {
     let node;
     if(e.target.parentNode.classList.contains("card")){
@@ -172,6 +231,9 @@ learningCards.addEventListener("click", function (e) {
 
 });
 
+//WHEN A THEME IS SELECTED
+//CARDS ARE FILTER TO MATCH THE SELECTED THEME
+//THE CARD GRID IS DISPLAYED
 themeSelector.onchange = function () {
     shuffleList(dict);
     cards = dict.filter(card => card['theme'] === themeSelector.value).slice(0, nbCards);
@@ -179,11 +241,9 @@ themeSelector.onchange = function () {
     learn.querySelector("#learning-playzone").removeAttribute("hidden");
 }
 
-let question;
-let score = 0;
-let cardList = [];
-let old_answers = [];
-
+//WHEN TRAINING BUTTON IS CLICKED, TRAINING PAGE IS DISPLAYED
+//A CARD IS PICKED UP AND BECOME THE NAME TO FIND
+//THE VOCAL ASSISTANT TELLS THE NAME
 document.getElementById("training-button").onclick = function () {
     learn.setAttribute("hidden", "hidden");
     train.removeAttribute("hidden");
@@ -210,15 +270,14 @@ micro.onclick = function () {
     microOn();
 }
 
-function microOn(){
-    micro.classList.add("clicked");
-    setTimeout(() => {
-        micro.classList.remove('clicked');
-    }, 500);
-}
-
-let nbEssais = 1;
+//WHEN A CARD IS CLICKED ON THE TRAINING PAGE
+//CHECK IF THE CARD SELECTED IS THE CARD TO FIND
+//IF IT IS, CARD IS SET TO GREEN, VOCAL ASSISTANT CONGRATS THE USER
+//IF CARD(S) HAVEN'T BEEN TO GUESS YET, VOCAL ASSISTANT PICK ANOTHER CARD
+//IF USER GIVE A WRONG ANSWER, VOCAL ASSISTANT TELLS THE USER
+//THEY HAVE ANOTHER CHANCE TO GUESS
 trainingCards.addEventListener("click", function (e) {
+
     let node;
     if(e.target.parentNode.classList.contains("card")){
         node = e.target.parentNode;
@@ -295,17 +354,5 @@ trainingCards.addEventListener("click", function (e) {
     }
 });
 
-function gameOver(){
-    window.speechSynthesis.cancel();
-    document.getElementById("micro-container").hidden = true;
-    document.getElementById("fin_jeu-container").hidden = false;
-    document.getElementById("fin_jeu-info").textContent = `Fin du jeu ! Votre score est de ${score}/9.`;
-    document.getElementById("again-container").hidden = false;
-}
-
-document.getElementById("home").onclick = function (){
-    location.reload();
-}
-
-
-
+//LOAD APP
+window.onload = checkSpeechAvailable
