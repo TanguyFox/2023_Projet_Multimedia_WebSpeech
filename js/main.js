@@ -87,7 +87,7 @@ function speak(text) {
 }
 
 //ARRAY WITH GREETINGS MESSAGE IN THE DIFFERENT LANGUAGES AVAILABLE ON THE APP
-let welcomingMsg = {
+let vocalMsg = {
     "Vrai" : {
         "French": "Bonne Réponse !",
         "English": "Correct !",
@@ -194,7 +194,7 @@ document.getElementById("training-button").onclick = function () {
 }
 
 document.getElementById("voiceTest").onclick = function () {
-    speak(welcomingMsg['Greeting'][language]);
+    speak(vocalMsg['Greeting'][language]);
 }
 
 //WHEN A LANGUAGE IS SELECTED? ASSOCIATED VOICES ARE LOADED
